@@ -1,0 +1,39 @@
+\documentclass[11pt]{book}
+%%%%%%%%%%%%%%%%%paquetes##################
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Arquitectura de Software}
+\author{Sandro Bolaños}
+
+%%%%%%%%%%%%%%%%%documento%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+\tableofcontents	
+	
+\part{Proyecto}	
+\include{proyecto/definicion}
+\include{proyecto/metodologia}
+
+\part{Arquitectura y Diseño}
+\include{arquitectura/empresa}
+\include{arquitectura/adm}
+\include{arquitectura/negocio}
+\include{arquitectura/aplicacion}
+\include{arquitectura/tecnologia}
+\include{arquitectura/motivacion}
+\include{arquitectura/proyecto}
+\include{arquitectura/diseno}
+\include{arquitectura/patrones}
+
+\part{Conclusiones y Reflexiones}
+\include{conclusiones/conclusiones}	
+\include{conclusiones/trabajosfuturos}	
+
+\bibliographystyle{plain}
+\bibliography{libros,articulos}
+\include{conclusiones/anexos}	
+	
+\end{document}
