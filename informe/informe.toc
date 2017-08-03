@@ -16,7 +16,7 @@
 \contentsline {part}{II\hspace {1em}Arquitectura y Dise\IeC {\~n}o}{21}
 \contentsline {chapter}{\numberline {3}Empresa}{23}
 \contentsline {section}{\numberline {3.1}Introducci\IeC {\'o}n}{23}
-\contentsline {section}{\numberline {3.2}Nombre -RS-}{24}
+\contentsline {section}{\numberline {3.2}Nombre}{24}
 \contentsline {section}{\numberline {3.3}Misi\IeC {\'o}n}{24}
 \contentsline {section}{\numberline {3.4}Visi\IeC {\'o}n}{24}
 \contentsline {section}{\numberline {3.5}Objetivos}{25}
