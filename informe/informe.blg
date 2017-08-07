@@ -12,10 +12,8 @@ A level-1 auxiliary file: arquitectura/diseno.aux
 A level-1 auxiliary file: arquitectura/patrones.aux
 A level-1 auxiliary file: conclusiones/conclusiones.aux
 A level-1 auxiliary file: conclusiones/trabajosfuturos.aux
-The style file: plain.bst
 A level-1 auxiliary file: conclusiones/anexos.aux
-Database file #1: libros.bib
-Database file #2: articulos.bib
-Warning--empty publisher in bol_arq
-Warning--empty year in bol_arq
-(There were 2 warnings)
+I found no \citation commands---while reading file informe.aux
+I found no \bibdata command---while reading file informe.aux
+I found no \bibstyle command---while reading file informe.aux
+(There were 3 error messages)

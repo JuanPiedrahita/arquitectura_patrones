@@ -1,18 +1,38 @@
-\documentclass[11pt]{book}
-%%%%%%%%%%%%%%%%%paquetes##################
-\usepackage[spanish]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage{graphicx}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{Arquitectura de Software}
-\author{Sandro Bolaños}
+\documentclass[11pt,fleqn]{book}
+%%%%%%%%%ARCHIVO DE ESTRUCTURA%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%documento%%%%%%%%%%%%%%%%%
+\input{structure}
+
+%%%%%%%%%%%MACROS%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%CUERPO%%%%%%%%%%%%%%%%
 
 \begin{document}
-\maketitle
-\tableofcontents	
 	
+\begingroup
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+\node[inner sep=0pt] (imagenes/productos) at (current page.center) {\includegraphics[width=\paperwidth]{imagenes/productos}};
+\draw (current page.center) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering JSJ Sport S.A.\\[15pt] % Book title
+{\Large Tienda deportiva }\\[20pt] % Subtitle
+{\huge Juan David Cubillos
+\linebreak Juan Piedrahita}}}; % Author name
+\end{tikzpicture}
+\vfill
+\endgroup
+
+%%TABLA DE CONTENIDOS%%
+
+\chapterimage{imagenes/tabla_contenido} % Table of contents heading image
+
+\pagestyle{empty}
+
+\tableofcontents
+
+\cleardoublepage 
+
+\pagestyle{fancy} 
+
 \part{Proyecto}	
 \include{proyecto/definicion}
 \include{proyecto/metodologia}
@@ -32,8 +52,6 @@
 \include{conclusiones/conclusiones}	
 \include{conclusiones/trabajosfuturos}	
 
-\bibliographystyle{plain}
-\bibliography{libros,articulos}
 \include{conclusiones/anexos}	
-	
+
 \end{document}

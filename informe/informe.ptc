@@ -1,0 +1,413 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {spanish}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\@mypartnumtocformat {I}{Proyecto}}{9}{part.1}
+\ttl@starttoc {default@1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Definici\IeC {\'o}n}{11}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Introducci\IeC {\'o}n}{11}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Problema}{12}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Objetivos}{13}{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.1}Objetivo General}{13}{subsection.1.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.2}Objetivos Espec\IeC {\'\i }ficos}{13}{subsection.1.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Justificaci\IeC {\'o}n}{14}{section.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.5}Alcance}{15}{section.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.5.1}Limitaciones}{15}{subsection.1.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.6}Presuspuesto}{16}{section.1.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Metodolog\IeC {\'\i }a}{17}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Introducci\IeC {\'o}n}{17}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Prototipo}{18}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Cronograma}{19}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\@mypartnumtocformat {II}{Arquitectura y Dise\IeC {\~n}o}}{21}{part.2}
+\ttl@stoptoc {default@1}
+\ttl@starttoc {default@2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Empresa}{23}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Introducci\IeC {\'o}n}{23}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Nombre}{24}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Misi\IeC {\'o}n}{24}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Visi\IeC {\'o}n}{24}{section.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Objetivos}{25}{section.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}ADM}{27}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Introduci\IeC {\'o}n}{27}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Modelo de Proceso}{28}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Negocio}{29}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Introducci\IeC {\'o}n}{29}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Punto de Vista de Organizaci\IeC {\'o}n}{29}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.1}Modelo}{29}{subsection.5.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.2}caso}{30}{subsection.5.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Punto de Vista de cooperaci\IeC {\'o}n de Actor}{31}{section.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.1}Modelo}{31}{subsection.5.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.2}caso}{32}{subsection.5.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}Punto de Vista de Funci\IeC {\'o}n de Negocio}{33}{section.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.1}Modelo}{33}{subsection.5.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.2}caso}{34}{subsection.5.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.5}Punto de Vista de Proceso de negocio}{35}{section.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.5.1}Modelo}{35}{subsection.5.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.5.2}caso}{36}{subsection.5.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.6}Punto de Vista de Cooperacion Proceso de negocio}{37}{section.5.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6.1}Modelo}{37}{subsection.5.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6.2}caso}{38}{subsection.5.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.7}Punto de Vista de Producto}{39}{section.5.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.7.1}Modelo}{39}{subsection.5.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.7.2}caso}{40}{subsection.5.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Aplicacion}{41}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Introducci\IeC {\'o}n}{41}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Punto de Vista de Comportamiento de Aplicaci\IeC {\'o}n}{41}{section.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.1}Modelo}{41}{subsection.6.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.2}caso}{42}{subsection.6.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Punto de Vista de cooperaci\IeC {\'o}n de Aplicaci\IeC {\'o}n}{43}{section.6.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.1}Modelo}{43}{subsection.6.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.2}caso}{44}{subsection.6.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.4}Punto de Vista de Estructura de aplicaci\IeC {\'o}n}{45}{section.6.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4.1}Modelo}{45}{subsection.6.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4.2}caso}{46}{subsection.6.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.5}Punto de Vista de Uso de Aplicaci\IeC {\'o}n}{47}{section.6.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.5.1}Modelo}{47}{subsection.6.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.5.2}caso}{48}{subsection.6.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Tecnolog\IeC {\'\i }a}{49}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Introducci\IeC {\'o}n}{49}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Punto de Vista de Infraestructura}{49}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2.1}Modelo}{49}{subsection.7.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2.2}caso}{50}{subsection.7.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Punto de Vista de Uso de Infraestructura}{51}{section.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.1}Modelo}{51}{subsection.7.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.2}caso}{52}{subsection.7.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.4}Punto de Vista de Implementaci\IeC {\'o}n y Despliegue}{53}{section.7.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.4.1}Modelo}{53}{subsection.7.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.4.2}caso}{54}{subsection.7.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.5}Punto de Vista de Estructura de la Informaci\IeC {\'o}n}{55}{section.7.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.5.1}Modelo}{55}{subsection.7.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.5.2}caso}{56}{subsection.7.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.6}Punto de Vista de Realizaci\IeC {\'o}n del Servicio}{57}{section.7.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.6.1}Modelo}{57}{subsection.7.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.6.2}caso}{58}{subsection.7.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.7}Punto de Vista de Capas}{59}{section.7.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.7.1}Modelo}{59}{subsection.7.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.7.2}caso}{60}{subsection.7.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Motivaci\IeC {\'o}n}{61}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.1}Introducci\IeC {\'o}n}{61}{section.8.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.2}Punto de Vista de Stakeholder}{61}{section.8.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.2.1}Modelo}{61}{subsection.8.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.2.2}caso}{62}{subsection.8.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.3}Punto de Vista de Realizaci\IeC {\'o}n de Objetivos}{63}{section.8.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.3.1}Modelo}{63}{subsection.8.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.3.2}caso}{64}{subsection.8.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.4}Punto de Vista de contribuci\IeC {\'o}n de Objetivos}{65}{section.8.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.4.1}Modelo}{65}{subsection.8.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.4.2}caso}{66}{subsection.8.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.5}Punto de Vista de Principios}{67}{section.8.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.5.1}Modelo}{67}{subsection.8.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.5.2}caso}{68}{subsection.8.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.6}Punto de Vista de Realizaci\IeC {\'o}n de Requerimientos}{69}{section.8.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.6.1}Modelo}{69}{subsection.8.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.6.2}caso}{70}{subsection.8.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.7}Punto de Vista de Motivaci\IeC {\'o}n}{71}{section.8.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.7.1}Modelo}{71}{subsection.8.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.7.2}caso}{72}{subsection.8.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}Proyecto}{73}{chapter.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.1}Introducci\IeC {\'o}n}{73}{section.9.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.2}Punto de Vista de Proyecto}{73}{section.9.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.2.1}Modelo}{73}{subsection.9.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.2.2}caso}{74}{subsection.9.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.3}Punto de Vista de Migraci\IeC {\'o}n}{75}{section.9.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.3.1}Modelo}{75}{subsection.9.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.3.2}caso}{76}{subsection.9.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.4}Punto de Vista de Inmplementaci\IeC {\'o}n y Migraci\IeC {\'o}n}{77}{section.9.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.4.1}Modelo}{77}{subsection.9.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.4.2}caso}{78}{subsection.9.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {10}Dise\IeC {\~n}o}{79}{chapter.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.1}Introducci\IeC {\'o}n}{79}{section.10.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.2}Requerimientos}{79}{section.10.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.2.1}Casos de Uso}{79}{subsection.10.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.2.2}Historias de Usuario}{79}{subsection.10.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.2.3}Tablas}{79}{subsection.10.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.3}Escenarios}{80}{section.10.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3.1}Diagrma de secuencia}{80}{subsection.10.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3.2}Diagrma de comunicaci\IeC {\'o}n}{80}{subsection.10.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.4}Clases}{81}{section.10.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.5}Componentes}{82}{section.10.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.6}Nodos}{83}{section.10.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.7}Sistemas}{84}{section.10.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.8}Actividades}{85}{section.10.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.9}Estados}{86}{section.10.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {11}Patrones}{87}{chapter.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.1}Introducci\IeC {\'o}n}{87}{section.11.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.2}Patrones Creacionales}{87}{section.11.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.2.1}Singleton}{87}{subsection.11.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Modelo}{87}{section*.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Caso}{88}{section*.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.2.2}Fabrica Abstracta}{89}{subsection.11.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Modelo}{89}{section*.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Caso}{90}{section*.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.2.3}constructor}{91}{subsection.11.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Modelo}{91}{section*.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Caso}{92}{section*.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.2.4}M\IeC {\'e}todo F\IeC {\'a}brica}{93}{subsection.11.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Modelo}{93}{section*.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Caso}{94}{section*.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.2.5}Prototipo}{95}{subsection.11.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Modelo}{95}{section*.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Caso}{96}{section*.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.3}Patrones Estructurales}{97}{section.11.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.3.1}Adaptador}{97}{subsection.11.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Modelo}{97}{section*.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Caso}{98}{section*.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.3.2}Puente}{99}{subsection.11.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Modelo}{99}{section*.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Caso}{100}{section*.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.3.3}componente}{101}{subsection.11.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Modelo}{101}{section*.16}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Caso}{102}{section*.17}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.3.4}Decorador}{103}{subsection.11.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Modelo}{103}{section*.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Caso}{104}{section*.19}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.3.5}Peso Ligero}{105}{subsection.11.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Modelo}{105}{section*.20}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Caso}{106}{section*.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.3.6}Proxy}{107}{subsection.11.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Modelo}{107}{section*.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Caso}{108}{section*.23}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.3.7}Fachada}{109}{subsection.11.3.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Modelo}{109}{section*.24}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Caso}{110}{section*.25}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.4}Patrones de Comportamiento}{111}{section.11.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.4.1}Comando}{111}{subsection.11.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Modelo}{111}{section*.26}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Caso}{112}{section*.27}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.4.2}Cadena de Responsabilidades}{113}{subsection.11.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Modelo}{113}{section*.28}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Caso}{114}{section*.29}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.4.3}Iterador}{115}{subsection.11.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Modelo}{115}{section*.30}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Caso}{116}{section*.31}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.4.4}Inrterprete}{117}{subsection.11.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Modelo}{117}{section*.32}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Caso}{118}{section*.33}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.4.5}Mediador}{119}{subsection.11.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Modelo}{119}{section*.34}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Caso}{120}{section*.35}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.4.6}Momento}{121}{subsection.11.4.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Modelo}{121}{section*.36}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Caso}{122}{section*.37}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.4.7}Observador}{123}{subsection.11.4.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Modelo}{123}{section*.38}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Caso}{124}{section*.39}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.4.8}Estado}{125}{subsection.11.4.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Modelo}{125}{section*.40}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Caso}{126}{section*.41}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.4.9}Estrategia}{127}{subsection.11.4.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Modelo}{127}{section*.42}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Caso}{128}{section*.43}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.4.10}Visitador}{129}{subsection.11.4.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Modelo}{129}{section*.44}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Caso}{130}{section*.45}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.4.11}M\IeC {\'e}todo Plantilla}{131}{subsection.11.4.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Modelo}{131}{section*.46}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Caso}{132}{section*.47}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\@mypartnumtocformat {III}{Conclusiones y Reflexiones}}{133}{part.3}
+\ttl@stoptoc {default@2}
+\ttl@starttoc {default@3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {12}Conclusiones}{135}{chapter.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {13}Trabajos Futuros}{137}{chapter.13}
+\contentsfinish 
