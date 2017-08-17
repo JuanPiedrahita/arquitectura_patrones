@@ -12,8 +12,21 @@ A level-1 auxiliary file: arquitectura/diseno.aux
 A level-1 auxiliary file: arquitectura/patrones.aux
 A level-1 auxiliary file: conclusiones/conclusiones.aux
 A level-1 auxiliary file: conclusiones/trabajosfuturos.aux
+The style file: plain.bst
 A level-1 auxiliary file: conclusiones/anexos.aux
-I found no \citation commands---while reading file informe.aux
-I found no \bibdata command---while reading file informe.aux
-I found no \bibstyle command---while reading file informe.aux
-(There were 3 error messages)
+Database file #1: libros.bib
+Database file #2: articulos.bib
+Database file #3: enlaces.bib
+Warning--empty publisher in pun2
+Warning--empty year in pun2
+Warning--empty publisher in pun5
+Warning--empty year in pun5
+Warning--empty publisher in pun3
+Warning--empty year in pun3
+Warning--empty publisher in pun1
+Warning--empty year in pun1
+Warning--empty publisher in pun4
+Warning--empty year in pun4
+Warning--empty publisher in pun6
+Warning--empty year in pun6
+(There were 12 warnings)
