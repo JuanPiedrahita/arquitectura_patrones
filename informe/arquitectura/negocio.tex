@@ -105,13 +105,20 @@ En la figura 5.7 se puede observar como la empresa JSJ sports tiene como princip
 	\label{fig:metamodelo de punto de vista de proceso de negocio}
 \end{figure} 
 El punto de vista de Proceso de Negocio se utiliza para mostrar la estructura y composición de alto nivel de uno o más procesos empresariales. 
-\newpage
 
 \subsection{Caso de estudio}
 
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{arquitectura/imagenes/VistaProcesoNegocio}
+	\caption{Modelo de Punto de Vista de Proceso de Negocio \cite{pun5}}
+	\label{fig:Modelo de punto de vista Proceso de Negocio}
+\end{figure}
 
 
-
+Como se puede ver en la figura 5.9 el servicio principal de la empresa es el vender artículos deportivos de todo tipo, este servicio depende completamente del proceso venta de artículos deportivos, el cual se divide en los sub-procesos de asesoría al cliente y despacho de la compra. 
+\newline
+A pesar de que el proceso principal es la venta, se sabe que este depende de otro gran proceso el cual es la producción de los artículos deportivos que se venden, esto es importante puesto que hace parte e los objetivos y misión de la empresa, este proceso a su vez se divide en 4 sub-procesos los cuales son: Recepción de materias primas, manufactura de productos, control de calidad y gestión de inventario.
 \newpage
 
 \section{Punto de Vista de Cooperacion Proceso de negocio}
@@ -120,13 +127,23 @@ El punto de vista de Proceso de Negocio se utiliza para mostrar la estructura y 
 \begin{figure}[th!]
 	\centering
 	\includegraphics[width=0.6\linewidth]{arquitectura/imagenes/modeloCooperacionProcesoNegocio}
-	\caption{Metamodelo de Punto de Vista Cooperación de Proceso de Negocio \cite{pun5}}
+	\caption{Metaodelo de Punto de Vista Cooperación de Proceso de Negocio \cite{pun5}}
 	\label{fig:metamodelo de punto de vista de cooperacion proceso de negocio}
 \end{figure}
 El punto de vista de Cooperación de Proceso de Negocio se utiliza para mostrar las relaciones de uno o más procesos de negocio entre sí y / o con su entorno. Puede utilizarse tanto para crear un diseño de alto nivel de procesos empresariales dentro de su contexto como para proporcionar un gestor operativo responsable de uno o más de dichos procesos con información sobre sus dependencias.
-\newpage
 
 \subsection{Caso de estudio}
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{arquitectura/imagenes/VistaCooperacionProcesoNegocio}
+	\caption{Modelo de Punto de Vista Cooperación Proceso de Negocio \cite{pun5}}
+	\label{fig:Modelo de punto de vista Cooperacion Proceso de Negocio}
+\end{figure}
+
+Al igual que en anterior punto de vista en este modelo se puede ver que la empresa tiene 2 grandes procesos, el primer proceso es el de la producción de artículos deportivos, este proceso es llevado a cabo por el productor en la Fabrica de JSJSport, el rol de productor esta conformado por varios roles, el primero es el operario de bodega quien es el encargado de recibir materias primas y organizar inventarios y productos, el segundo es el operario de producción donde se encuentran todos los encargados de la elaboración del producto y por último el encargado de realizar el proceso de control de calidad.
+\newline
+El segundo gran proceso es llevado a cabo por el asesor comercial quien asesora al cliente y realiza la venta en la tienda de JSJSport, ademas de esto en el sub-proceso de despacho de compra se incluye el rol de domiciliario quien es el encargado de entregar este producto al cliente.
 
 \newpage
 
@@ -141,9 +158,16 @@ El punto de vista de Cooperación de Proceso de Negocio se utiliza para mostrar 
 \end{figure}
 El punto de vista del Producto representa el valor que estos productos ofrecen a los clientes u otras partes externas involucradas y muestra la composición de uno o más productos en términos de los servicios constitutivos (comerciales o de aplicación) y los contratos asociados u otros acuerdos.
 
-\newpage
-
 \subsection{Caso de estudio}
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.5\linewidth]{arquitectura/imagenes/VistaProducto}
+	\caption{Modelo de Punto de Vista de Producto \cite{pun5}}
+	\label{fig:modelo de punto de vista Producto}
+\end{figure}
+En la imagen 5.13 se puede observar que el principal servicio de JSJSport es la venta de artículos deportivos al cliente, el producto estrella de la empresa JSJ son los artículos deportivos JSJ, el producto cuenta con 3 diferentes servicios claves para la identidad de la empresa, los cuales son, asesoría al cliente, facilidad de pago y compra, y la gran cantidad de artículos ofrecidos para cada deporte con la cual se busca que en la tienda se tengan los artículos necesarios para cada disciplina deportiva.
+A su vez el producto tiene 3 valores, la disponibilidad del producto y de los asesores, la calidad de este producto y la garantía de que el cliente va a encontrar lo que busca.
 
 \newpage
 
