@@ -17,10 +17,16 @@ A level-1 auxiliary file: conclusiones/anexos.aux
 Database file #1: libros.bib
 Database file #2: articulos.bib
 Database file #3: enlaces.bib
+Warning--empty publisher in pun7
+Warning--empty year in pun7
 Warning--empty publisher in pun2
 Warning--empty year in pun2
+Warning--empty publisher in pun8
+Warning--empty year in pun8
 Warning--empty publisher in pun5
 Warning--empty year in pun5
+Warning--empty publisher in pun9
+Warning--empty year in pun9
 Warning--empty publisher in pun3
 Warning--empty year in pun3
 Warning--empty publisher in pun1
@@ -29,4 +35,6 @@ Warning--empty publisher in pun4
 Warning--empty year in pun4
 Warning--empty publisher in pun6
 Warning--empty year in pun6
-(There were 12 warnings)
+Warning--empty publisher in pun10
+Warning--empty year in pun10
+(There were 20 warnings)
