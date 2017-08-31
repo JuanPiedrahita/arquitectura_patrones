@@ -26,7 +26,16 @@ Esta figura no muestra todas las relaciones permitidas: cada concepto en el leng
 El punto de vista del comportamiento de la aplicación describe el comportamiento interno de una aplicación, por ejemplo, cuando realiza uno o más servicios de aplicación. Este punto de vista es útil para diseñar el comportamiento principal de las aplicaciones, o para identificar la superposición funcional entre diferentes aplicaciones.
 
 \subsection{Caso de estudio}
-
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{arquitectura/imagenes/VistaComportamientoAplicacion}
+	\caption{Punto de vista comportamiento de la aplicacion}
+	\label{fig:vistacomportamientoaplicacion}
+\end{figure}
+En la figura 6.3 se observa el componente principal de la empresa JSJ sports, que se compone de varios componentes los que a su vez tienen diferentes funciones.
+\newline
+El componente pagos tiene dos funciones principales las cuales son verificar el pago y	realizar la facturacion, este componente a su vez llama al componente de gestor de inventario que se encarga de gestionar los productos y actualizar el inventario de los mismos, el componente de gestion de carrito de compras se encarga de agregar y eliminar del carrito.
+El componente de gestor de usuario se encarga de actualizar los datos y el registro de usuarios, el componente de sesion de cliente, se encarga del registro y el login, finalmente el componente de asesor al cliente se encarga de brindar apoyo en el proceso de compra.
 \newpage
 
 \section{Punto de Vista de cooperación de Aplicación}
@@ -43,6 +52,18 @@ El punto de vista del comportamiento de la aplicación describe el comportamient
 El punto de vista Cooperación de Aplicación describe las relaciones entre los componentes de las aplicaciones en términos de los flujos de información entre ellos o en términos de los servicios que se ofrecen y utilizan. Este punto de vista se suele utilizar para crear una visión general del entorno de aplicación de una organización. Este punto de vista también se utiliza para expresar la cooperación (interna) o la orquestación de servicios que juntos apoyan la ejecución de un proceso de negocio.
 
 \subsection{Caso de estudio}
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.5\linewidth]{arquitectura/imagenes/VistaCooperacionAplicacion}
+	\caption{Punto de vista cooperacion de aplicacion}
+	\label{fig:vistacooperacionaplicacion}
+\end{figure}
+
+
+Como se puede en la figura se divide la aplicacion en dos ubicaciones una que es visible y de acceso para el usuario, el front office y la otra que es ya la correspondiente al back end de la aplicacion que es el bak office y no es de acceso directo para el usuario, alli se tiene la lógica de la aplicación y la persistencia de la misma.
+\newline
+
+
 
 \newpage
 
