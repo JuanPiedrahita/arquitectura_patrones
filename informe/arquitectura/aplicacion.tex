@@ -19,14 +19,23 @@ Esta figura no muestra todas las relaciones permitidas: cada concepto en el leng
 
 \begin{figure}[th!]
 	\centering
-	\includegraphics[width=0.6\linewidth]{arquitectura/imagenes/modeloComportamientoAplicacion}
+	\includegraphics[width=0.5\linewidth]{arquitectura/imagenes/modeloComportamientoAplicacion}
 	\caption{Metamodelo de Punto de Vista de Comportamiento de Aplicación \cite{pun7}}
 	\label{fig:metamodelo de punto de vista de comportamiento de aplicación}
 \end{figure}
 El punto de vista del comportamiento de la aplicación describe el comportamiento interno de una aplicación, por ejemplo, cuando realiza uno o más servicios de aplicación. Este punto de vista es útil para diseñar el comportamiento principal de las aplicaciones, o para identificar la superposición funcional entre diferentes aplicaciones.
 
 \subsection{Caso de estudio}
-
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{arquitectura/imagenes/VistaComportamientoAplicacion}
+	\caption{Punto de Vista Comportamiento de Aplicación}
+	\label{fig:vistacomportamientoaplicacion}
+\end{figure}
+En la figura 6.3 se observa el componente principal de la empresa JSJSports, que esta conformada por varios componentes los que a su vez tienen diferentes funciones.
+\newline
+El componente pagos tiene dos funciones principales las cuales son verificar el pago y	realizar la facturación, este componente a su vez llama al componente de gestor de inventario que se encarga de gestionar los productos y actualizar el inventario de los mismos, el componente gestor de carrito de compras se encarga de agregar y eliminar los diferentes productos seleccionados por el cliente del carrito.
+El componente de gestor de usuario se encarga de actualizar los datos y el registro de usuarios, el componente de sesión de cliente, se encarga del registro y el login que realiza el cliente para ingresar al sistema y finalmente el componente asesor de cliente que se encarga de establecer comunicación entre el asesor y el usuario para brindar apoyo en el proceso de compra.
 \newpage
 
 \section{Punto de Vista de cooperación de Aplicación}
@@ -35,7 +44,7 @@ El punto de vista del comportamiento de la aplicación describe el comportamient
 
 \begin{figure}[th!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/modeloCooperacionAplicacion}
+	\includegraphics[width=0.5\linewidth]{arquitectura/imagenes/modeloCooperacionAplicacion}
 	\caption{Metamodelo de Punto de Vista de Cooperación de Aplicación \cite{pun8}}
 	\label{fig:metamodelo de punto de vista de cooperación de aplicación}
 \end{figure}
@@ -43,6 +52,17 @@ El punto de vista del comportamiento de la aplicación describe el comportamient
 El punto de vista Cooperación de Aplicación describe las relaciones entre los componentes de las aplicaciones en términos de los flujos de información entre ellos o en términos de los servicios que se ofrecen y utilizan. Este punto de vista se suele utilizar para crear una visión general del entorno de aplicación de una organización. Este punto de vista también se utiliza para expresar la cooperación (interna) o la orquestación de servicios que juntos apoyan la ejecución de un proceso de negocio.
 
 \subsection{Caso de estudio}
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.5\linewidth]{arquitectura/imagenes/VistaCooperacionAplicacion}
+	\caption{Punto de Vista Cooperación de Aplicación}
+	\label{fig:vistacooperacionaplicacion}
+\end{figure}
+
+
+Como se puede ver en la figura se divide la aplicación en dos ubicaciones una que es visible y tiene acceso para el usuario, el front office y la otra que es ya la correspondiente al back end de la aplicacion que es el back office el cual no es de acceso directo para el usuario, allí se tiene la lógica de la aplicación y la persistencia de la misma.
+\newline
+En el back office se puede observar el gestor de pagos, el de inventarios y el de usuarios, en la parte del front office se tiene todo el componente de JSJSport web que actúa como puente entre el front office y el back office, ademas de este, tambien encontramos en el front office el componente de asesoria y el de sesión del cliente, y el componente que gestiona el carrito de compras del usuario que le permite realizar las compras.
 
 \newpage
 
