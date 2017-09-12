@@ -79,8 +79,18 @@ En el back office se puede observar el gestor de pagos, el de inventarios y el d
 El punto de vista de Estructura de la aplicación muestra la estructura de una o más aplicaciones o componentes. Este punto de vista es útil para diseñar o comprender la estructura principal de aplicaciones o componentes y los datos asociados, por ejemplo, para descomponer la estructura del sistema en construcción o para identificar componentes de aplicación heredados que son adecuados para la migración/integración.
 
 \subsection{Caso de estudio}
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/PuntoVistaEstructuraAplicacion}
+	\caption{Punto de Vista Estructura de Aplicación}
+	\label{fig:vistaEstructuraaplicacion}
+\end{figure}
+
+En este punto de vista podemos ver como los componentes se  comunican con el componente  central JSJSport Web por medio de interfaces, la interfaz asesoría permite brindar asesoría al usuario, la interfaz login le permite al usuario administrar su sesión, la interfaz carrito ayuda a manejar el carrito de compras. La interfaz recaudo permite gestionar los pagos, la interfaz de usuarios permite gestionar los usuarios, roles y permisos, y la interfaz inventariable permite hacer la gestión de los inventarios.
 
 \newpage
+
+
 
 \section{Punto de Vista de Uso de Aplicación}
 
@@ -95,6 +105,13 @@ El punto de vista de Estructura de la aplicación muestra la estructura de una o
 El punto de vista Uso de aplicación describe cómo se utilizan las aplicaciones para soportar uno o más procesos empresariales y cómo se utilizan en otras aplicaciones. Se puede utilizar en el diseño de una aplicación mediante la identificación de los servicios necesarios por los procesos de negocio y otras aplicaciones, o en el diseño de procesos de negocio mediante la descripción de los servicios que están disponibles.
 
 \subsection{Caso de estudio}
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.5\linewidth]{arquitectura/imagenes/PuntoVistaUsoAplicacion}
+	\caption{Punto de Vista Uso de Aplicación}
+	\label{fig:vistaUsoaplicacion}
+\end{figure}
+
+El proceso empresarial que soportara el sistema será el de la venta de artículos deportivos, como se puede ver en la imagen de este proceso dependen 2 servicios, el primero es el de asesoría de cliente que se suple con ayuda del componente de asesor del cliente y que permite aconsejar, apoyar y acompañar al usuario durante el proceso de compra, el segundo servicio es el de hacer los pagos y las compras de forma remota sin necesidad de ir hasta la tienda física, este servicio se suple con el componente de pagos que ayuda a gestionar los pagos que se hacen en el sistema.
 
 \newpage
-

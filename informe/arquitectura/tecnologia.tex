@@ -2,13 +2,35 @@
 
 \section{Introducción}
 
+El principal concepto estructural para la capa tecnológica es el nodo. Este concepto se utiliza para modelar entidades estructurales en esta capa. Es idéntico al concepto de nodo de UML 2.0. Se modela estrictamente el aspecto estructural de un sistema: su comportamiento es modelado por una relación explícita con los conceptos de comportamiento.
+
+Una interfaz de infraestructura es la ubicación (lógica) donde los servicios de infraestructura ofrecidos por un nodo pueden ser accedidos por otros nodos o por componentes de la aplicación de la capa de aplicación.
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/tecnologia}
+	\caption{Metamodelo de la Capa de Tecnología}
+	\label{fig:tecnologia}
+\end{figure}
+
+Las interrelaciones de los componentes de la capa tecnológica están formadas principalmente por la infraestructura de comunicación. El camino de comunicación modela la relación entre dos o más nodos, a través de los cuales estos nodos pueden intercambiar información. La realización física de un camino de comunicación es modelada con una red; es decir, un medio físico de comunicación entre dos o más dispositivos (u otras redes).
+
+
+\newpage
+
 \section{Punto de Vista de Infraestructura}
 
 \subsection{Modelo}
 
-\newpage
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/modeloInfraestructura}
+	\caption{Metamodelo Punto de Vista Infraestructura}
+	\label{metamodeloInfraestructura}
+\end{figure}
+El punto de vista Infraestructura contiene los elementos de infraestructura de software y hardware que soportan la capa de aplicación, como dispositivos físicos, redes o software del sistema (por ejemplo, sistemas operativos, bases de datos y middleware).
 
-\subsection{caso}
+\subsection{Caso de estudio}
 
 \newpage
 
@@ -16,9 +38,15 @@
 
 \subsection{Modelo}
 
-\newpage
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/modeloUsoInfraestructura}
+	\caption{Metamodelo Punto de Vista Uso de Infraestructura}
+	\label{metamodeloUsoInfraestructura}
+\end{figure}
+El punto de vista de uso de la infraestructura muestra cómo las aplicaciones son compatibles con la infraestructura de software y hardware: los servicios de infraestructura son entregados por los dispositivos; Software del sistema y las redes se proporcionan a las aplicaciones. 
 
-\subsection{caso}
+\subsection{Caso de estudio}
 
 \newpage
 
@@ -26,9 +54,15 @@
 
 \subsection{Modelo}
 
-\newpage
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.5\linewidth]{arquitectura/imagenes/modeloOrganizacionImplementacion}
+	\caption{Metamodelo Punto de Vista Organización e Implementación}
+	\label{metamodeloOrganizacionImplementacion}
+\end{figure}
+El punto de vista Organización e Implementación muestra cómo se realizan una o más aplicaciones en la infraestructura. Esto comprende la asignación de aplicaciones y componentes (lógicos) o artefactos (físicos), como Enterprise Java Beans, y la asignación de la información utilizada por estas aplicaciones y componentes en la infraestructura de almacenamiento subyacente. Por ejemplo, tablas de base de datos u otros archivos. Las vistas de implementación juegan un papel importante en el análisis de rendimiento y escalabilidad, ya que relacionan la infraestructura física con el mundo lógico de las aplicaciones. En análisis de seguridad y riesgo, las vistas de implementación se utilizan para identificar, por ejemplo, dependencias y riesgos críticos.
 
-\subsection{caso}
+\subsection{Caso de estudio}
 
 \newpage
 
@@ -36,9 +70,15 @@
 
 \subsection{Modelo}
 
-\newpage
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.5\linewidth]{arquitectura/imagenes/modeloEstructuraDeInformacion}
+	\caption{Metamodelo Punto de Vista Estructura de Información}
+	\label{metamodeloEstructuraInformacion}
+\end{figure}
+El punto de vista de la estructura de información es comparable a los modelos de información tradicionales creados en el desarrollo de casi cualquier sistema de información. Muestra la estructura de la información utilizada en la empresa o en un proceso o aplicación de negocio específico, en términos de tipos de datos o estructuras de clases (orientadas a objetos). 
 
-\subsection{caso}
+\subsection{Caso de estudio}
 
 \newpage
 
@@ -46,9 +86,15 @@
 
 \subsection{Modelo}
 
-\newpage
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/modeloRealizacionServicio}
+	\caption{Metamodelo Punto de Vista Realización Del Servicio}
+	\label{metamodeloRealizacionServicio}
+\end{figure}
+El punto de vista Realización del servicio se utiliza para mostrar cómo uno o más servicios empresariales son realizados por los procesos subyacentes (ya veces por los componentes de la aplicación). Por lo tanto, forma el puente entre el punto de vista de productos empresariales y la vista de procesos empresariales. 
 
-\subsection{caso}
+\subsection{Caso de estudio}
 
 \newpage
 
@@ -56,9 +102,17 @@
 
 \subsection{Modelo}
 
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{arquitectura/imagenes/modeloCapas}
+	\caption{Metamodelo Punto de Vista Capas}
+	\label{metamodeloCapas}
+\end{figure}
+El punto de vista Capas muestra varias capas y aspectos de una arquitectura empresarial en un diagrama. Hay dos categorías de capas, a saber, capas dedicadas y capas de servicio. Las capas son el resultado del uso de la relación de "agrupación" para una partición natural de todo el conjunto de objetos y relaciones que pertenecen a un modelo. La infraestructura, la aplicación, el proceso y las capas de actores / roles pertenecen a la primera categoría. El principio estructural detrás de un punto de vista completamente estratificado es que cada capa dedicada expone, mediante la relación de "realización", una capa de servicios, que son "usados" por la siguiente capa dedicada.
+
 \newpage
 
-\subsection{caso}
+\subsection{Caso de estudio}
 
 \newpage
 
