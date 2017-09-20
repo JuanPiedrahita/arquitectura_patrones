@@ -32,6 +32,15 @@ El punto de vista Infraestructura contiene los elementos de infraestructura de s
 
 \subsection{Caso de estudio}
 
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{arquitectura/imagenes/PuntoVistaInfraestructura}
+	\caption{Modelo Punto de Vista Infraestructura}
+	\label{modeloInfraestructura}
+\end{figure}
+
+Como se puede ver en la Figura 7.3 este punto de vista refleja la infraestructura necesaria para nuestra aplicación, la página WEB se ubicara en un host y dependera de un servidor WEB, además para la persistencia se hará uso de una base de datos de MySQL y ademas se hará uso de un sistema operativo Windows,el servidor WEB se comunica con internet, donde el cliente se comunica con su dispositivo a una LAN que se conecta a internet y por lo tanto a la pagina web.
+
 \newpage
 
 \section{Punto de Vista de Uso de Infraestructura}
@@ -40,13 +49,24 @@ El punto de vista Infraestructura contiene los elementos de infraestructura de s
 
 \begin{figure}[th!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/modeloUsoInfraestructura}
+	\includegraphics[width=0.6\linewidth]{arquitectura/imagenes/modeloUsoInfraestructura}
 	\caption{Metamodelo Punto de Vista Uso de Infraestructura}
 	\label{metamodeloUsoInfraestructura}
 \end{figure}
 El punto de vista de uso de la infraestructura muestra cómo las aplicaciones son compatibles con la infraestructura de software y hardware: los servicios de infraestructura son entregados por los dispositivos; Software del sistema y las redes se proporcionan a las aplicaciones. 
 
 \subsection{Caso de estudio}
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{arquitectura/imagenes/PuntoVistaUsoInfraestructura}
+	\caption{Modelo Punto de Vista Uso de Infraestructura}
+	\label{modeloUsoInfraestructura}
+\end{figure}
+
+Como se puede ver en la figura 7.5 el uso de la infraestructura esta dividido en nodos, el nodo del servidor WEB aloja todos los componentes previamente definidos de la pagina web que corresponden a la página incluyendo la principal.
+\newline
+Los otros 3 componentes corresponden a los nodos externos a la aplicación, el nodo del servicio de pagos provee un api que proporciona un tercer y que se encarga de los pagos este se comunica con los pagos de la aplicación y lo acopla, el nodo del cliente es lo que el cliente ve desde su ordenador y se comunica con el componente que maneja la sesión del cliente, por último se tiene el componente de inventario que se aloja en la tienda donde se maneja el inventario físico.
 
 \newpage
 
@@ -64,6 +84,15 @@ El punto de vista Organización e Implementación muestra cómo se realizan una 
 
 \subsection{Caso de estudio}
 
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/PuntoVistaOrganizacionImplementacion}
+	\caption{Modelo Punto de Vista Organización Implementación}
+	\label{modeloOrganizacion}
+\end{figure}
+
+En este punto de vista se puede observar la colaboración que existe entre el componente de inventarios de la página WEB que se aloja en el host y el componente de inventario físico que existe en la tienda de JSJSport, esta colaboración tiene luegar en un API que se encuentra en el servidor de cruce y que accede y hace uso del elemento inventario.
+
 \newpage
 
 \section{Punto de Vista de Estructura de la Información}
@@ -80,6 +109,18 @@ El punto de vista de la estructura de información es comparable a los modelos d
 
 \subsection{Caso de estudio}
 
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/PuntoVistaEstructuraInformacion}
+	\caption{Modelo Punto de Vista Estructura Información}
+	\label{modeloEstructuraInformacion}
+\end{figure}
+
+En la figura 7.9 se puede observar como el conjunto de productos que tiene JSJSports se ve reflejado en el catalogo de productos de la empresa, del lado de la aplicación se puede ver que el inventario se ve reflejado en el catalogo de productos, este inventario tiene muchos productos y a la vez se encuentra en JSJSport que tiene una ubicación.
+\newline
+Al igual que JSJSport, el cliente también tiene una ubicación y no solo esto sino que también accede a los productos que tiene el inventario, todo esto desde la aplicación.
+
+
 \newpage
 
 \section{Punto de Vista de Realización del Servicio}
@@ -95,6 +136,15 @@ El punto de vista de la estructura de información es comparable a los modelos d
 El punto de vista Realización del servicio se utiliza para mostrar cómo uno o más servicios empresariales son realizados por los procesos subyacentes (ya veces por los componentes de la aplicación). Por lo tanto, forma el puente entre el punto de vista de productos empresariales y la vista de procesos empresariales. 
 
 \subsection{Caso de estudio}
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/PuntoVistaRealizacionServicio}
+	\caption{Modelo Punto de Vista Realización Servicio}
+	\label{modeloRealizacionServicio}
+\end{figure}
+
+En este punto de vista se puede observar como los servicios previamente definidos en las otras capas son ejecutados por los componentes que se definieron en la capa de aplicación, en este caso el servicio de asesoría en la compra de productos deportivos esta siendo brindado a un cliente, la función de venta de artículos deportivos busca satisfacer este servicio, el encargado de realizar esta función es un asesor de la tienda, todo esto se dirige al catalogo de productos puesto que este es el tema central con el que se busca satisfacer al cliente y es la razón por la cual se comunican el cliente y el asesor, este catalogo a su vez hace uso del inventario que se encuentra en la aplicación.
 
 \newpage
 
@@ -113,6 +163,15 @@ El punto de vista Capas muestra varias capas y aspectos de una arquitectura empr
 \newpage
 
 \subsection{Caso de estudio}
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/PuntoVistaCapas}
+	\caption{Modelo Punto de Vista de Capas}
+	\label{modeloCapas}
+\end{figure}
+
+Sin lugar a dudas este punto de vista que se ve reflejado en la figura 7.13 es uno de los mas importantes sino es que es el más importante puesto que refleja el trabajo hecho en las anteriores capas y como se conectan, lo principal es el servicio de la asesoría en compras de productos deportivos que se busca brindar dentro de la capa de negocio vemos la función que se realizara, dentro de la aplicación el componente que va a realizar esta función y dentro de la infraestructura podemos ver lo que nos permitirá montar concretamente la solución para lograr así satisfacer el servicio principal.
 
 \newpage
 
