@@ -1,13 +1,24 @@
 \chapter{Motivación}
 \section{Introducción}
-
+Los conceptos de motivación se utilizan para modelar las motivaciones, o razones, que subyacen en el diseño o cambio de alguna arquitectura empresarial. Estas motivaciones influyen, orientan y limitan el diseño.
+\paragraph{}
+Es esencial comprender los factores, a menudo referidos como conductores, que influyen en los elementos motivacionales. Pueden originarse desde dentro o fuera de la empresa. Los conductores internos, también llamados preocupaciones, están asociados con las partes interesadas, que pueden ser algún ser humano individual o algún grupo de seres humanos, como un equipo de proyecto, empresa o sociedad. rentabilidad. Es común que las empresas realicen una evaluación de estos conductores; Por ejemplo, utilizando un análisis DAFO, con el fin de responder de la mejor manera.
+\paragraph{}
+Las motivaciones reales están representadas por objetivos, principios, requisitos y limitaciones. Los objetivos representan algún resultado deseado - o final - que un interesado quiere lograr; Por ejemplo, aumentando la satisfacción del cliente en un 10. Los principios y los requisitos representan las propiedades deseadas de las soluciones - o medios - para realizar las metas. Los principios son pautas normativas que guían el diseño de todas las soluciones posibles en un contexto dado. Por ejemplo, el principio "Los datos deben almacenarse sólo una vez" representa un medio para lograr el objetivo de "consistencia de datos" y se aplica a todos los posibles diseños de la arquitectura de la organización. Los requisitos representan declaraciones formales de necesidad, expresadas por los interesados, que deben ser satisfechas por la arquitectura o las soluciones. Por ejemplo, el requisito "Usar un único sistema de CRM" se ajusta al principio antes mencionado aplicándolo a la arquitectura de la organización actual en el contexto de la gestión de los datos de los clientes.
+\newpage
 \section{Punto de Vista de Stakeholder}
 
 \subsection{Modelo}
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/modeloStakeholder}
+	\caption{Metamodelo Punto de Vista de Partes Interesadas}
+	\label{metamodelo partes interesadas}
+\end{figure}
+El punto de vista de las partes interesadas permite al analista modelar las partes interesadas, los impulsores internos y externos del cambio y las evaluaciones (en términos de fortalezas, debilidades, oportunidades y amenazas) de estos controladores. También se pueden describir los vínculos con los objetivos iniciales (de nivel alto) que abordan estas preocupaciones y evaluaciones. Estos objetivos forman la base para el proceso de ingeniería de requisitos, incluyendo refinamiento de objetivos, contribución y análisis de conflictos, y la derivación de requisitos que realicen los objetivos
 
-\newpage
 
-\subsection{caso}
+\subsection{Caso  de estudio}
 
 \newpage
 
@@ -15,19 +26,32 @@
 
 \subsection{Modelo}
 
-\newpage
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.5\linewidth]{arquitectura/imagenes/modeloRealizacionObjetivos}
+	\caption{Metamodelo Punto de Vista de Realización de Objetivos}
+	\label{metamodelo realizacion objetivos}
+\end{figure}
+El punto de vista de la realización de metas permite a un diseñador modelar el refinamiento de metas (de alto nivel) en metas más concretas y el refinamiento de objetivos concretos en requisitos o restricciones que describen las propiedades que se necesitan para realizar las metas. El refinamiento de objetivos en subobjetivos se modela utilizando la relación de agregación. El refinamiento de metas en requisitos se modela utilizando la relación de realización.
+Además, los principios pueden ser modelados que guían el refinamiento de objetivos en requisitos
 
-\subsection{caso}
+\subsection{Caso de Estudio}
 
 \newpage
 
 \section{Punto de Vista de contribución de Objetivos}
 
 \subsection{Modelo}
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.4\linewidth]{arquitectura/imagenes/modeloContribucion}
+	\caption{Metamodelo Punto de Vista de Contribucion}
+	\label{metamodelo contribucion}
+\end{figure}
+El punto de vista de la contribución permite a un diseñador o analista modelar las relaciones de influencia entre objetivos y requisitos. Las vistas resultantes pueden usarse para analizar el impacto que las metas tienen entre sí o para detectar conflictos entre los objetivos de las partes interesadas.
+Típicamente, este punto de vista puede ser utilizado después de que los objetivos se hayan refinado hasta cierto punto en subobjetivos y, posiblemente, en requisitos.
 
-\newpage
-
-\subsection{caso}
+\subsection{Caso de Estudio}
 
 \newpage
 
@@ -35,9 +59,15 @@
 
 \subsection{Modelo}
 
-\newpage
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.3\linewidth]{arquitectura/imagenes/modeloPrincipios}
+	\caption{Metamodelo Punto de Vista de Principios}
+	\label{metamodelo principios}
+\end{figure}
+El punto de vista de los principios permite al analista o diseñador modelar los principios que son relevantes para el problema de diseño en cuestión, incluyendo los objetivos que motivan estos principios. Además, las relaciones entre los principios y sus objetivos pueden ser modeladas. 
 
-\subsection{caso}
+\subsection{Caso de Estudio}
 
 \newpage
 
@@ -45,19 +75,31 @@
 
 \subsection{Modelo}
 
-\newpage
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.5\linewidth]{arquitectura/imagenes/modeloRealizacionRequerimientos}
+	\caption{Metamodelo Punto de Vista de Realización de Requerimientos}
+	\label{metamodelo realizacion requerimientos}
+\end{figure}
+El punto de vista de la realización de los requisitos permite al diseñador modelar la realización de los requisitos por parte de los elementos básicos, como los actores empresariales, los servicios empresariales, los procesos empresariales, los servicios de aplicación, los componentes de la aplicación, etc.
+Además, este punto de vista puede usarse para refinar requisitos en requisitos más detallados. La relación de agregación se utiliza para este propósito.
 
-\subsection{caso}
+\subsection{Caso de Estudio}
 
 \newpage
 
 \section{Punto de Vista de Motivación}
 
 \subsection{Modelo}
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.5\linewidth]{arquitectura/imagenes/modeloMotivacion}
+	\caption{Metamodelo Punto de Vista de Motivación}
+	\label{metamodelo motivacion}
+\end{figure}
+El punto de vista de la motivación permite al diseñador o analista modelar el aspecto de la motivación, sin centrarse en ciertos elementos dentro de este aspecto. Por ejemplo, este punto de vista puede utilizarse para presentar un panorama completo o parcial del aspecto de la motivación relacionando a las partes interesadas, sus objetivos principales, los principios que se aplican y los principales requisitos de servicios, procesos, aplicaciones y objetos.
 
-\newpage
-
-\subsection{caso}
+\subsection{Caso de estudio}
 
 \newpage
 
