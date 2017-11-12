@@ -202,17 +202,42 @@ El diagrama de comunicación anterior, describe mediante que mensajes se comunic
 
 El diagrama de comunicación anterior, muestra la comunicación entre el cliente (administrador) y la interfaz PW producto (mediante el mensaje subir a la web) y la interfaz Formulario de administración producto, mediante el mensaje crear producto, quienes se comunican con la clase control producto, mediante los mensajes de consulta y setear características respectivamente, por otro lado, el administrador se comunica con el objeto producto, mediante el mensaje de creación. Por ultimo la clase control producto, se comunica con la base de datos, con los mensajes de consulta y creación de productos.
 
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=1.1\linewidth]{arquitectura/imagenes/Diagrama_comunicacion_cc}
+	\caption{Diagrama de comunicación para Gestión de Mensajes}
+	\label{fig:diagramaComunicacionMensajes}
+\end{figure}
+
+Como se puede ver en la figura \ref{fig:diagramaComunicacionMensajes} la comunicación entre el usuario y la interfaz de mensajes se da cuando el cliente desea consultar sus mensajes o enviar un mensaje que escribió, la interfaz de mensajes a su vez se conecta con el control del mensaje el cual permite hacer las diferentes comunicaciones a la base de datos conforme al proceso que se necesite.
 \newpage
 
 \section{Clases}
 Un diagrama de clases es una forma de visualización de código de programación llevado a un nivel más sencillo para que el desarrollador tenga un mayor nivel de comprensión, por medio de estos diagramas se evidencia que existen soluciones a problemas recurrentes, estos son llamados patrones, el uso de patrones en el desarrollo de software no solo optimiza el funcionamiento del sistema si no permite la escalabilidad y la agregación de nuevas funciones 
 
-Para la solución propuesta al problema de la PYME  se presentan los siguientes diagramas de clases, usando patrones de diseño para el desarrollo de un sistema óptimo y escalable.
+Para la solución propuesta al problema de la PYME JSJSports se presentan los siguientes diagramas de clases, usando patrones de diseño para el desarrollo de un sistema óptimo y escalable.
 
 \newpage
 
 \section{Componentes}
-Un componente es un objeto dentro de un sistema que cumple una funcionalidad específica, en un diagrama de componentes se pueden observar varios componentes relacionados entre sí, los componentes cumplen la característica que son cajas negras y además pueden implementar interfaces entre ellos
+Un componente es un objeto dentro de un sistema que cumple una funcionalidad específica, en un diagrama de componentes se pueden observar varios componentes relacionados entre sí, los componentes cumplen la característica que son cajas negras y además pueden implementar interfaces entre ellos.
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/modeloEstructuraAplicacion}
+	\caption{Metamodelo un Diagrama de Componentes}
+	\label{fig:metamodeloComponentes}
+\end{figure}
+
+\subsection*{Caso de estudio}
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/PuntoVistaEstructuraAplicacion}
+	\caption{Diagrama de Componentes}
+	\label{fig:componentes}
+\end{figure}
+
+En este diagrama de componentes podemos observar cada uno de los componentes del sistema y las interfaces que funcionan como pegamento para estos componentes con el con el componente  central JSJSport Web, la interfaz asesoría permite brindar asesoría al usuario y es la que se encarga de realizar todo los procesos de comunicación, la interfaz login le permite al usuario administrar su sesión e ingresar o salir del sistema, la interfaz carrito ayuda a manejar el carrito de compras y los productos que desea el usuario. La interfaz recaudo permite gestionar los pagos de las compras realizadas, la interfaz de usuarios permite gestionar los usuarios y sus roles y permisos, por último la interfaz inventariable permite hacer la gestión de los inventarios y productos que tiene la PYME.
 
 \newpage
 
@@ -234,25 +259,41 @@ Entre estos componentes encontramos acciones que serán ejecutadas dependiendo d
 Para el caso de la interfaz administrativa, contara con acciones como agregar, modificar o eliminar productos, estableciendo una conexión con los componentes del servidor que permiten realizar dichas acciones
 En el caso de la interfaz de usuario se dispondrá de acciones como la compra de los productos, y todo el proceso que conllevando estableciendo una comunicación con el servidor jsj que llamara a dichos componentes
 El servidor jsj tambien nececita una comunicación con una base de datos que se encargará de almacenar todo tipo de información relacionada con la pagina, como los productos, los usuarios, información de los pedidos, etc
-Los otros nodos que podemos encontrar como pc de usuario y de admin son recursos fisicos necesarios para la comunicacion con la pagina web
+Los otros nodos que podemos encontrar como pc de usuario y de admin son recursos fisicos necesarios para la comunicacion con la pagina web. \newline
+En el punto de vista de uso de infraestructura en la figura \ref{modeloUsoInfraestructura} se puede observar de forma más clara lo que se encuentra en el nodo del servidor JSJ, y las interacciones con las interfaces del administrador y del cliente, dentro del servidor de JSJ encontramos cada uno de los componentes definidos para el sistema integrados en función de satisfacer cada una de las necesidades de los usuarios.
 \newpage
 
 \section{Sistemas}
-También llamado diagrama de paquetes se observa la organización jerárquica y de relación que tienen los paquetes de los cuales se compone el sistema, a partir de este podemos observar el rendimiento del sistema por medio de la evaluación de métricas.
+También llamado diagrama de paquetes se observa la organización jerárquica y la relación que tienen los paquetes de los cuales se compone el sistema, a partir de este podemos observar el rendimiento del sistema por medio de la evaluación de métricas.
 
-En el siguiente diagrama se evidencia la organización de las clases en el proyecto y su ubicación en los diferentes paquetes que implementa el proyecto.
+En el siguiente diagrama se evidencia la organización de cada una de las partes del proyecto y su ubicación en los diferentes paquetes que implementa el mismo, en este caso dentro de la aplicación web de JSJSports en el paquete de componentes encontramos todos los componentes definidos anteriormente dentro del paquete com. Además de los componentes encontramos el api y las utilidades que son los que nos permitirán hacer el pegamento con los componentes y cargar cada no de los mismos componentes necesarios para el funcionamiento.
+
+En la parte inferior de la figura \ref{fig:sistemas} se puede observar el paquete com, en donde básicamente se encuentra la presentación que tiene todos los aspectos de la vista, el repositorio que se encarga de la persistencia y el paquete más importante el cableado que se encarga de realizar todo el cableado de la aplicación y estructurarla.
+
+
 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.9\linewidth]{arquitectura/imagenes/DiagramaDeSistemas}
 	\caption{Diagrama de Sistemas}
+	\label{fig:sistemas}
 \end{figure}
 
 
 \newpage
 
-\section{Actividades}
-Un diagrama de actividades permite al desarrollador observar cómo se está realizando el proceso y como se comunican los diferentes actores, dentro de dichas actividades puede haber decisiones pero siempre el proceso debe acabar.
+\section{Diagrama de Actividades}
+Un diagrama de actividades permite al desarrollador observar cómo se está realizando el proceso y como se comunican los diferentes actores, dentro de dichas actividades puede haber decisiones pero siempre el proceso debe acabar.\newline
+Muestra un proceso de negocio o un proceso de software como un lujo de trabajo a través de una serie de acciones. Las personas, los componentes de software o los equipos pueden realizar estas actividades.
+Puede usar un diagrama de activiades para describir procesos de varios tipos, como los ejemplos siguientes:
+\begin{itemize}
+   \item Un proceso de negocio o un flujo de trabajo entre los usuarios y el sistema.
+	\item Los pasos que se realizen en un caso de uso.
+	\item Un protocolo de software, es decir, las secuencias de interacciones entre componentes permitidos.
+	\item Un algoritmo de Software
+\end{itemize} 
+
+\subsection*{Caso de Estudio}
 
 En el siguiente diagrama de actividades se muestra como es el proceso de la compra de un producto, en la que intervienen 3 actores principales:
 \begin{enumerate}
@@ -264,14 +305,21 @@ En el siguiente diagrama de actividades se muestra como es el proceso de la comp
 \begin{figure}[th!]
 	\centering
 	\includegraphics[width=1\linewidth]{arquitectura/imagenes/workflow}
-	\caption{Diagrama de actividades}
+	\caption{Diagrama de actividades para la compra de un producto}
 	\label{fig:workflow}
 \end{figure}
 
-\newpage
 
 El proceso de compra de un producto empieza por el comprador que es el que escoge el producto deseado, enviando una petición a la plataforma, para verificar su existencia, la cual hace la consulta en el inventario para ver su disponibilidad, en este paso hay dos posibles opciones, en el caso de que no sea disponible, envía un aviso a la plataforma para que informe al comprador y se acaba la acción, en el caso de que sea disponible, la plataforma muestra los métodos de pago disponibles, una vez que el comprador escoja un método de pago, se validara en la plataforma y se procederá a enviar la facturación al comprador y a la actualización del inventario del producto.
 
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=1\linewidth]{arquitectura/imagenes/workflowMensajes}
+	\caption{Diagrama de actividades para proceso de comunicación}
+	\label{fig:workflowMensajes}
+\end{figure}
+
+En la figura \ref{fig:workflowMensajes} se puede observar las actividades implicadas en el proceso de comunicación de dos usuarios del sistema (asesor->cliente o cliente->asesor), para ver los mensajes es necesario que este se solicite ver los mensajes y la plataforma solicitara a la bd los mensajes del usuario y los mostrara, una vez el usuario lea los mensajes podrá redactar un mensaje y enviarlo, allí la plataforma solicitará a la base de datos registrar el respectivo mensaje.
 
 \newpage
 
@@ -289,11 +337,9 @@ A continuación veremos el diagrama de estados para el sistema de compra en lín
 En el anterior Diagrama de estados podemos ver la transición que tienen los productos desde el momento en que se cargan a la página, hasta que se realiza exitosamente una  compra, para esto nos basamos en 4 estados posibles, en inventario, en carrito, vendido, agotado, el producto empieza en un estado base de en inventario con una cantidad disponible, cuando se agrega el producto a carrito se cambia de estado a en carrito, en donde tiene dos posibles disparadores, que son desagregar de carrito y confirmar compra, si se desagrega del carrito, regresara a su estado base en inventario, si se confirma la compra cambiara de estado ha vendido, en donde se actualizara el inventario, si la cantidad comprada es igual a la disponibles en inventario, el producto quedara en un estado de agotado, si aún hay unidades disponibles volverá a un estado de inventario, a partir de ahí podemos crear una clase producto la cual podrá contener cualquiera de los 4 estados como se muestra a continuación:
 
 
-\newpage
-
 \begin{figure}[th!]
 	\centering
-	\includegraphics[width=1\linewidth]{arquitectura/imagenes/clase_producto_estados}
+	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/clase_producto_estados}
 	\caption{Clase producto estado}
 \end{figure}
 
