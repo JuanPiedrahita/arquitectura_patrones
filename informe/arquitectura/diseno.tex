@@ -3,10 +3,14 @@
 
 \section{Introducción}
 
-En el desarrollo de software, es fundamental para los desarrolladores tener una idea clara sobre el funcionamiento del programa a realizar para ello se basan en herramientas que les permiten realizar el análisis de requerimientos para complacer las necesidades del cliente, a continuación veremos el proceso de análisis de dichos requerimientos para nuestro problema en particular
+El propósito de la gestión de requerimientos es asegurar que el proyecto cumple con las expectativas de sus clientes y en general de todos sus interesados, tanto externos como internos, siendo este el proceso que garantiza el vínculo entre lo que esperan los clientes y usuarios, y lo que los equipos de proyecto tienen que desarrollar. Si bien muchos de sus principios pueden ser adaptados a todo tipo de proyectos, es en los proyectos de desarrollo de software donde adquieren todo su sentido, garantizando el proceso y sirviendo de referencia para asegurar y controlar los cambios que en el proyecto puedan surgir (trazabilidad).
+
+Es fundamental para los desarrolladores tener una idea clara sobre el funcionamiento del programa o sistema que se va realizar para ello se basan en herramientas que les permiten realizar el análisis de requerimientos para complacer las necesidades del cliente, a continuación veremos los resultados del proceso de análisis de dichos requerimientos para nuestro problema en particular.
+
+\newpage
 
 \section{Requerimientos}
-Los principales requeremientos se presentaran acontinuacion en las siguientes tablas
+Los principales requerimientos se presentaran a continuación en las siguientes tablas
 
 \begin{table}[th!]
 	\centering
@@ -16,12 +20,12 @@ Los principales requeremientos se presentaran acontinuacion en las siguientes ta
 		\hline
 		ID del requisito                                                             & \multicolumn{2}{c|}{REQ EN}                                                                                                                                                                \\ \hline
 		Versión                                                                      & \multicolumn{2}{c|}{1}                                                                                                                                                                     \\ \hline
-		Autores                                                                      & \multicolumn{2}{c|}{Sebastian Bohorquez, Johan Perez, Juan Cubillos}                                                                                                                       \\ \hline
-		Descripción                                                                  & \multicolumn{2}{l|}{\begin{tabular}[c]{@{}l@{}}Las empresas PYME desean ampliar las ventas de sus\\ negocios  mediante la venta de sus productos a \\ través de plataformas web\end{tabular}} \\ \hline
+		Autores                                                                      & \multicolumn{2}{c|}{Sebastian Piedrahita, Juan Cubillos}                                                                                                                       \\ \hline
+		Descripción                                                                  & \multicolumn{2}{l|}{\begin{tabular}[c]{@{}l@{}}Las empresas PYME desean ampliar las ventas de sus\\ negocios  mediante la venta de sus productos a \\ través de plataformas web.\end{tabular}} \\ \hline
 		Precondicion                                                                 & \multicolumn{2}{l|}{}                                                                                                                                                                      \\ \hline
 		\multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Secuencia \\ normal\end{tabular}} & Paso                         & Acción                                                                                                                                                      \\ \cline{2-3} 
-		& 1                            & \begin{tabular}[c]{@{}l@{}}Crear una plataforma web para las empresas\\ PYME en la que puedan publicitar sus productos\end{tabular}                        \\ \hline
-		Postcondicion                                                                & \multicolumn{2}{l|}{REQ REL Y REQ PP}                                                                                                                                                      \\ \hline
+		& 1                            & \begin{tabular}[c]{@{}l@{}}Crear una plataforma web para las empresas\\ PYME en la que puedan publicitar sus productos \\ y llegar a cualquier tipo de población deseada.\end{tabular}                        \\ \hline
+		Postcondicion                                                                & \multicolumn{2}{l|}{REQ REL, REQ CC y  REQ PP}                                                                                                                                                      \\ \hline
 		Excepciones                                                                  & Paso                         & Acción                                                                                                                                                      \\ \hline
 		& 1                            & Otros países                                                                                                                                                \\ \hline
 		Importancia                                                                  & \multicolumn{2}{l|}{Primordial}                                                                                                                                                            \\ \hline
@@ -30,7 +34,7 @@ Los principales requeremientos se presentaran acontinuacion en las siguientes ta
 	\end{tabular}
 \end{table}
 
-\newpage
+
 \begin{table}[th!]
 	\centering
 	\caption{REQ PUBLICITAR PRODUCTO}
@@ -39,7 +43,7 @@ Los principales requeremientos se presentaran acontinuacion en las siguientes ta
 		\hline
 		ID del requisito                                                             & \multicolumn{2}{l|}{REQ PP}                                                                                                                                                                                       \\ \hline
 		Versión                                                                      & \multicolumn{2}{c|}{1}                                                                                                                                                                                            \\ \hline
-		Autores                                                                      & \multicolumn{2}{c|}{Sebastian Bohorquez, Johan Perez, Juan Cubillos}                                                                                                                                              \\ \hline
+		Autores                                                                      & \multicolumn{2}{c|}{Sebastian Piedrahita, Juan Cubillos}                                                                                                                                              \\ \hline
 		Descripción                                                                  & \multicolumn{2}{l|}{\begin{tabular}[c]{@{}l@{}}Mediante el uso de una plataforma web, las empresas PYME\\ podrán publicitar sus productos mostrando sus características y  \\el inventario del mismo.\end{tabular}} \\ \hline
 		Precondicion                                                                 & \multicolumn{2}{l|}{REQ EN}                                                                                                                                                                                       \\ \hline
 		\multirow{6}{*}{\begin{tabular}[c]{@{}l@{}}Secuencia\\  normal\end{tabular}} & Paso                                                                        & Acción                                                                                                                              \\ \cline{2-3} 
@@ -61,15 +65,39 @@ Los principales requeremientos se presentaran acontinuacion en las siguientes ta
 	\end{tabular}
 \end{table}
 \newpage
+
 \begin{table}[th!]
-	
+	\centering
+	\caption{REQ COMUNICACIÓN CON CLIENTES}
+	\label{my-label}
+	\begin{tabular}{|l|l|l|}
+		\hline
+		ID del requisito                                                             & \multicolumn{2}{c|}{REQ EN}                                                                                                                                                                \\ \hline
+		Versión                                                                      & \multicolumn{2}{c|}{1}                                                                                                                                                                     \\ \hline
+		Autores                                                                      & \multicolumn{2}{c|}{Sebastian Piedrahita, Juan Cubillos}                                                                                                                       \\ \hline
+		Descripción                                                                  & \multicolumn{2}{l|}{\begin{tabular}[c]{@{}l@{}}Las empresas PYME desean no perder la comunicación \\ y asesoría que se le da al cliente  en el proceso de compra.\end{tabular}} \\ \hline
+		Precondicion                                                                 &  \multicolumn{2}{l|}{REQ EN}                                                                                                                                                                      \\ \hline
+		\multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Secuencia \\ normal\end{tabular}} & Paso                         & Acción                                                                                                                                                      \\ \cline{2-3} 
+		& 1                            & \begin{tabular}[c]{@{}l@{}}Crear una sección de discusión dentro de la plataforma que \\ permita la comunicación entre asesores y clientes.\end{tabular}                        \\ \hline
+		Postcondicion                                                                & \multicolumn{2}{l|}{}                                                                                                                                                      \\ \hline
+		Excepciones                                                                  & Paso                         & Acción                                                                                                                                                      \\ \hline
+		&                             & El cliente no esta registrado                                                                                                                                               \\ \hline
+		Importancia                                                                  & \multicolumn{2}{l|}{Primordial}                                                                                                                                                            \\ \hline
+		Urgencia                                                                     & \multicolumn{2}{l|}{Primordial}                                                                                                                                                            \\ \hline
+		Comentarios                                                                  & \multicolumn{2}{l|}{}                                                                                                                                                                      \\ \hline
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[th!]
+	\centering
 	\caption{REQ RECAUDO EN LINEA}
 	\label{my-label3}
 	\begin{tabular}{|l|l|l|}
 		\hline
-		ID del requisito                                                             & \multicolumn{2}{c|}{REQ REL}                                                                                                                                                                                                                                         \\ \hline
+		ID del requisito                                                             & \multicolumn{2}{c|}{REQ CC}                                                                                                                                                                                                                                         \\ \hline
 		Versión                                                                      & \multicolumn{2}{c|}{1}                                                                                                                                                                                                                                               \\ \hline
-		Autores                                                                      & \multicolumn{2}{c|}{Sebastian Bohorquez, Johan Perez, Juan Cubillos}                                                                                                                                                                                                 \\ \hline
+		Autores                                                                      & \multicolumn{2}{c|}{Sebastián Piedrahita, Juan Cubillos}                                                                                                                                                                                                 \\ \hline
 		Descripción                                                                  & \multicolumn{2}{l|}{\begin{tabular}[c]{@{}l@{}}Una vez publicado el producto se podrá proceder a la compra \\del mismo, teniendo en cuenta la verificación del medio de \\pago y se procederá a pedir los datos del usuario para el \\posterior envió\end{tabular}} \\ \hline
 		Precondicion                                                                 & \multicolumn{2}{l|}{REQ EN}                                                                                                                                                                                                                                          \\ \hline
 		\multirow{8}{*}{\begin{tabular}[c]{@{}l@{}}Secuencia \\ normal\end{tabular}} & Paso                                                                   & Acción                                                                                                                                                                                      \\ \cline{2-3} 
@@ -102,11 +130,13 @@ Un diagrama de casos de uso nos sirve para observar el “QUE” del sistema, mo
 	\centering
 	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/casosDeUso}
 	\caption{Diagrama de  casos de Uso}
+	\label{fig:casosUso}
 \end{figure}
 
-El proceso de expandir el negocio, como  se puede observar en el diagrama, incluye dos procesos importantes, el primero de ellos es que el sistema pueda publicitar productos, en otras palabras,  brindar al cliente una plataforma web donde pueda exponer sus productos hacia al público deseado, teniendo en cuenta los aspectos como su inventario, apoyándose con una base de datos.
-
+El proceso de expandir el negocio, como  se puede observar en la figura \ref{fig:casosUso}, incluye tres procesos importantes, el primero de ellos es que el sistema pueda publicitar productos, en otras palabras,  brindar al cliente una plataforma web donde pueda exponer sus productos hacia al público deseado, teniendo en cuenta los aspectos como su inventario, apoyándose con una base de datos.\newline
+El proceso de comunicación con el cliente consiste en todo lo  relacionado al proceso de asesoría que se le brinda al cliente en la página, durante todo el proceso de compra que ese realice podrá consultar el cualquier momento a algún asesor cualquier duda o inquietud que le surja con respecto a los productos o a los procesos de pago. \newline
 El proceso de recaudo en línea, consiste en todo lo relacionado con la compra y venta del producto que se ofrecen en la plataforma web anteriormente generada, y verifica que el medio de pago ingresado por el usuario sea válido, una vez se compruebe el paso anterior se procederá a la confirmación de la compra, generando un comprobante de pago para la empresa y para el usuario para finalmente  proceder a pedirle al usuario que ingrese los datos del domicilio.
+
 
 
 \newpage
@@ -138,6 +168,15 @@ En el diagrama de secuencia anterior, se describe la secuencia entre el cliente,
 	\caption{Diagrama de secuencia Publicitar Producto}
 \end{figure}
 En el diagrama de secuencia anterior, se describe el proceso para crear y publicar un producto en la plataforma web del cliente. Inicialmente el administrador (cliente) deberá crear el producto, posteriormente seleccionara crear el producto mediante un formulario de administrador, en el cual colocara (seteara) las características del mismo, las cuales pasaran por una clase de control de producto y este a su vez creara el producto en la base de datos, con lo cual el formulario de administración del producto, retornara un mensaje de satisfacción. Por último el administrador, seleccionara subir a la web, haciendo un llamado a la interfaz PW producto, quien hará una consulta del producto, por medio de la clase control producto, para hacer una consulta en la base de datos.
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=1.0\linewidth]{arquitectura/imagenes/DiagramaDeSecuenciaCC}
+	\caption{Diagrama de secuencia Comunicación con el cliente}
+	\label{img:secuenciacomcliente}
+\end{figure}
+
+En la figura \ref{img:secuenciacomcliente} se puede observar el proceso que se realizara cuando un usuario independientemente de su rol (cliente/asesor) desee crear o establecer una comunicación con su contraparte, asesor->cliente y cliente->asesor. Inicialmente el usuario deberá ingresar al módulo de comunicación y allí se hará una consulta de todos los mensajes enviados y recibidos previamente y se mostrarán en estilo de conversación, posteriormente el usuario creara un mensaje redactando el contenido de este y lo enviara, este pasara por una interfaz de mensajes que accederá a la clase de control de mensajes y lo guardará en la base.
 
 \subsection{Diagrama de comunicación}
 Un diagrama de comunicación le sirve al desarrollador para modelar las interacciones entre los objetos que hacen parte de un sistema en términos de mensajes en secuencia, esto se refiere a todas las acciones que pueden realizar los objetos del sistema sobre otros objetos del mismo sistema, después de realizado un diagrama de secuencia se facilita la creación de los diagramas de comunicación.

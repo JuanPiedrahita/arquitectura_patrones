@@ -40,4 +40,20 @@ Sandro BOLAÑOS.
 Sandro BOLAÑOS.
 \newblock {\em Punto de Vista de Uso de Aplicación}.
 
+\bibitem{togaf4}
+The~Open Group.
+\newblock {\em ArchiMate 2.0 Specification}.
+
+\bibitem{togaf3}
+The~Open Group.
+\newblock {\em ArchiMate 3.0.1 Specification}.
+
+\bibitem{togaf2}
+The~Open Group.
+\newblock {\em TOGAF 9.1. Part II: Architecture Development Method (ADM)}.
+
+\bibitem{togaf1}
+Etienne Venter.
+\newblock {\em Integrating TOGAF ADM, ArchiMate, BPMN and UML into your SDLC}.
+
 \end{thebibliography}
