@@ -126,89 +126,86 @@
 \contentsline {section}{\numberline {10.2}Requerimientos}{73}{section.10.2}
 \contentsline {subsection}{\numberline {10.2.1}Casos de Uso}{76}{subsection.10.2.1}
 \contentsline {section}{\numberline {10.3}Escenarios}{77}{section.10.3}
-\contentsline {subsection}{\numberline {10.3.1}Diagrma de secuencia}{77}{subsection.10.3.1}
-\contentsline {subsection}{\numberline {10.3.2}Diagrma de comunicaci\IeC {\'o}n}{77}{subsection.10.3.2}
-\contentsline {section}{\numberline {10.4}Clases}{78}{section.10.4}
-\contentsline {section}{\numberline {10.5}Componentes}{79}{section.10.5}
-\contentsline {section}{\numberline {10.6}Nodos}{80}{section.10.6}
-\contentsline {section}{\numberline {10.7}Sistemas}{81}{section.10.7}
-\contentsline {section}{\numberline {10.8}Actividades}{82}{section.10.8}
-\contentsline {section}{\numberline {10.9}Estados}{83}{section.10.9}
-\contentsline {chapter}{\numberline {11}Patrones}{85}{chapter.11}
-\contentsline {section}{\numberline {11.1}Introducci\IeC {\'o}n}{85}{section.11.1}
-\contentsline {section}{\numberline {11.2}Patrones Creacionales}{85}{section.11.2}
-\contentsline {subsection}{\numberline {11.2.1}Singleton}{85}{subsection.11.2.1}
-\contentsline {subsubsection}{Modelo}{85}{section*.4}
-\contentsline {subsubsection}{Caso}{86}{section*.5}
-\contentsline {subsection}{\numberline {11.2.2}Fabrica Abstracta}{87}{subsection.11.2.2}
-\contentsline {subsubsection}{Modelo}{87}{section*.6}
-\contentsline {subsubsection}{Caso}{88}{section*.7}
-\contentsline {subsection}{\numberline {11.2.3}constructor}{89}{subsection.11.2.3}
-\contentsline {subsubsection}{Modelo}{89}{section*.8}
-\contentsline {subsubsection}{Caso}{90}{section*.9}
-\contentsline {subsection}{\numberline {11.2.4}M\IeC {\'e}todo F\IeC {\'a}brica}{91}{subsection.11.2.4}
-\contentsline {subsubsection}{Modelo}{91}{section*.10}
-\contentsline {subsubsection}{Caso}{92}{section*.11}
-\contentsline {subsection}{\numberline {11.2.5}Prototipo}{93}{subsection.11.2.5}
-\contentsline {subsubsection}{Modelo}{93}{section*.12}
-\contentsline {subsubsection}{Caso}{94}{section*.13}
-\contentsline {section}{\numberline {11.3}Patrones Estructurales}{95}{section.11.3}
-\contentsline {subsection}{\numberline {11.3.1}Adaptador}{95}{subsection.11.3.1}
-\contentsline {subsubsection}{Modelo}{95}{section*.14}
-\contentsline {subsubsection}{Caso}{96}{section*.15}
-\contentsline {subsection}{\numberline {11.3.2}Puente}{97}{subsection.11.3.2}
-\contentsline {subsubsection}{Modelo}{97}{section*.16}
-\contentsline {subsubsection}{Caso}{98}{section*.17}
-\contentsline {subsection}{\numberline {11.3.3}componente}{99}{subsection.11.3.3}
-\contentsline {subsubsection}{Modelo}{99}{section*.18}
-\contentsline {subsubsection}{Caso}{100}{section*.19}
-\contentsline {subsection}{\numberline {11.3.4}Decorador}{101}{subsection.11.3.4}
-\contentsline {subsubsection}{Modelo}{101}{section*.20}
-\contentsline {subsubsection}{Caso}{102}{section*.21}
-\contentsline {subsection}{\numberline {11.3.5}Peso Ligero}{103}{subsection.11.3.5}
-\contentsline {subsubsection}{Modelo}{103}{section*.22}
-\contentsline {subsubsection}{Caso}{104}{section*.23}
-\contentsline {subsection}{\numberline {11.3.6}Proxy}{105}{subsection.11.3.6}
-\contentsline {subsubsection}{Modelo}{105}{section*.24}
-\contentsline {subsubsection}{Caso}{106}{section*.25}
-\contentsline {subsection}{\numberline {11.3.7}Fachada}{107}{subsection.11.3.7}
-\contentsline {subsubsection}{Modelo}{107}{section*.26}
-\contentsline {subsubsection}{Caso}{108}{section*.27}
-\contentsline {section}{\numberline {11.4}Patrones de Comportamiento}{109}{section.11.4}
-\contentsline {subsection}{\numberline {11.4.1}Comando}{109}{subsection.11.4.1}
-\contentsline {subsubsection}{Modelo}{109}{section*.28}
-\contentsline {subsubsection}{Caso}{110}{section*.29}
-\contentsline {subsection}{\numberline {11.4.2}Cadena de Responsabilidades}{111}{subsection.11.4.2}
-\contentsline {subsubsection}{Modelo}{111}{section*.30}
-\contentsline {subsubsection}{Caso}{112}{section*.31}
-\contentsline {subsection}{\numberline {11.4.3}Iterador}{113}{subsection.11.4.3}
-\contentsline {subsubsection}{Modelo}{113}{section*.32}
-\contentsline {subsubsection}{Caso}{114}{section*.33}
-\contentsline {subsection}{\numberline {11.4.4}Inrterprete}{115}{subsection.11.4.4}
-\contentsline {subsubsection}{Modelo}{115}{section*.34}
-\contentsline {subsubsection}{Caso}{116}{section*.35}
-\contentsline {subsection}{\numberline {11.4.5}Mediador}{117}{subsection.11.4.5}
-\contentsline {subsubsection}{Modelo}{117}{section*.36}
-\contentsline {subsubsection}{Caso}{118}{section*.37}
-\contentsline {subsection}{\numberline {11.4.6}Momento}{119}{subsection.11.4.6}
-\contentsline {subsubsection}{Modelo}{119}{section*.38}
-\contentsline {subsubsection}{Caso}{120}{section*.39}
-\contentsline {subsection}{\numberline {11.4.7}Observador}{121}{subsection.11.4.7}
-\contentsline {subsubsection}{Modelo}{121}{section*.40}
-\contentsline {subsubsection}{Caso}{122}{section*.41}
-\contentsline {subsection}{\numberline {11.4.8}Estado}{123}{subsection.11.4.8}
-\contentsline {subsubsection}{Modelo}{123}{section*.42}
-\contentsline {subsubsection}{Caso}{124}{section*.43}
-\contentsline {subsection}{\numberline {11.4.9}Estrategia}{125}{subsection.11.4.9}
-\contentsline {subsubsection}{Modelo}{125}{section*.44}
-\contentsline {subsubsection}{Caso}{126}{section*.45}
-\contentsline {subsection}{\numberline {11.4.10}Visitador}{127}{subsection.11.4.10}
-\contentsline {subsubsection}{Modelo}{127}{section*.46}
-\contentsline {subsubsection}{Caso}{128}{section*.47}
-\contentsline {subsection}{\numberline {11.4.11}M\IeC {\'e}todo Plantilla}{129}{subsection.11.4.11}
-\contentsline {subsubsection}{Modelo}{129}{section*.48}
-\contentsline {subsubsection}{Caso}{130}{section*.49}
-\contentsline {part}{\@mypartnumtocformat {III}{Conclusiones y Reflexiones}}{131}{part.3}
-\contentsline {chapter}{\numberline {12}Conclusiones}{133}{chapter.12}
-\contentsline {chapter}{\numberline {13}Trabajos Futuros}{135}{chapter.13}
+\contentsline {subsection}{\numberline {10.3.1}Diagrama de secuencia}{77}{subsection.10.3.1}
+\contentsline {subsection}{\numberline {10.3.2}Diagrama de comunicaci\IeC {\'o}n}{78}{subsection.10.3.2}
+\contentsline {section}{\numberline {10.4}Clases}{80}{section.10.4}
+\contentsline {section}{\numberline {10.5}Componentes}{81}{section.10.5}
+\contentsline {section}{\numberline {10.6}Nodos}{82}{section.10.6}
+\contentsline {section}{\numberline {10.7}Sistemas}{83}{section.10.7}
+\contentsline {section}{\numberline {10.8}Actividades}{84}{section.10.8}
+\contentsline {section}{\numberline {10.9}Estados}{86}{section.10.9}
+\contentsline {chapter}{\numberline {11}Patrones}{89}{chapter.11}
+\contentsline {section}{\numberline {11.1}Introducci\IeC {\'o}n}{89}{section.11.1}
+\contentsline {section}{\numberline {11.2}Patrones Creacionales}{89}{section.11.2}
+\contentsline {subsection}{\numberline {11.2.1}Fabrica Abstracta}{89}{subsection.11.2.1}
+\contentsline {subsubsection}{Modelo}{89}{section*.4}
+\contentsline {subsubsection}{Caso}{90}{section*.5}
+\contentsline {subsection}{\numberline {11.2.2}constructor}{91}{subsection.11.2.2}
+\contentsline {subsubsection}{Modelo}{91}{section*.6}
+\contentsline {subsubsection}{Caso}{92}{section*.7}
+\contentsline {subsection}{\numberline {11.2.3}M\IeC {\'e}todo F\IeC {\'a}brica}{93}{subsection.11.2.3}
+\contentsline {subsubsection}{Modelo}{93}{section*.8}
+\contentsline {subsubsection}{Caso}{94}{section*.9}
+\contentsline {subsection}{\numberline {11.2.4}Prototipo}{95}{subsection.11.2.4}
+\contentsline {subsubsection}{Modelo}{95}{section*.10}
+\contentsline {subsubsection}{Caso}{96}{section*.11}
+\contentsline {section}{\numberline {11.3}Patrones Estructurales}{97}{section.11.3}
+\contentsline {subsection}{\numberline {11.3.1}Adaptador}{97}{subsection.11.3.1}
+\contentsline {subsubsection}{Modelo}{97}{section*.12}
+\contentsline {subsubsection}{Caso}{98}{section*.13}
+\contentsline {subsection}{\numberline {11.3.2}Puente}{99}{subsection.11.3.2}
+\contentsline {subsubsection}{Modelo}{99}{section*.14}
+\contentsline {subsubsection}{Caso}{99}{section*.15}
+\contentsline {subsection}{\numberline {11.3.3}componente}{100}{subsection.11.3.3}
+\contentsline {subsubsection}{Modelo}{100}{section*.16}
+\contentsline {subsubsection}{Caso}{101}{section*.17}
+\contentsline {subsection}{\numberline {11.3.4}Decorador}{102}{subsection.11.3.4}
+\contentsline {subsubsection}{Modelo}{102}{section*.18}
+\contentsline {subsubsection}{Caso}{103}{section*.19}
+\contentsline {subsection}{\numberline {11.3.5}Peso Ligero}{104}{subsection.11.3.5}
+\contentsline {subsubsection}{Modelo}{104}{section*.20}
+\contentsline {subsubsection}{Caso}{105}{section*.21}
+\contentsline {subsection}{\numberline {11.3.6}Proxy}{106}{subsection.11.3.6}
+\contentsline {subsubsection}{Modelo}{106}{section*.22}
+\contentsline {subsubsection}{Caso}{107}{section*.23}
+\contentsline {subsection}{\numberline {11.3.7}Fachada}{108}{subsection.11.3.7}
+\contentsline {subsubsection}{Modelo}{108}{section*.24}
+\contentsline {subsubsection}{Caso}{109}{section*.25}
+\contentsline {section}{\numberline {11.4}Patrones de Comportamiento}{110}{section.11.4}
+\contentsline {subsection}{\numberline {11.4.1}Comando}{110}{subsection.11.4.1}
+\contentsline {subsubsection}{Modelo}{110}{section*.26}
+\contentsline {subsubsection}{Caso}{111}{section*.27}
+\contentsline {subsection}{\numberline {11.4.2}Cadena de Responsabilidades}{112}{subsection.11.4.2}
+\contentsline {subsubsection}{Modelo}{112}{section*.28}
+\contentsline {subsubsection}{Caso}{113}{section*.29}
+\contentsline {subsection}{\numberline {11.4.3}Iterador}{114}{subsection.11.4.3}
+\contentsline {subsubsection}{Modelo}{114}{section*.30}
+\contentsline {subsubsection}{Caso}{115}{section*.31}
+\contentsline {subsection}{\numberline {11.4.4}Inrterprete}{116}{subsection.11.4.4}
+\contentsline {subsubsection}{Modelo}{116}{section*.32}
+\contentsline {subsubsection}{Caso}{117}{section*.33}
+\contentsline {subsection}{\numberline {11.4.5}Mediador}{118}{subsection.11.4.5}
+\contentsline {subsubsection}{Modelo}{118}{section*.34}
+\contentsline {subsubsection}{Caso}{119}{section*.35}
+\contentsline {subsection}{\numberline {11.4.6}Momento}{120}{subsection.11.4.6}
+\contentsline {subsubsection}{Modelo}{120}{section*.36}
+\contentsline {subsubsection}{Caso}{121}{section*.37}
+\contentsline {subsection}{\numberline {11.4.7}Observador}{122}{subsection.11.4.7}
+\contentsline {subsubsection}{Modelo}{122}{section*.38}
+\contentsline {subsubsection}{Caso}{123}{section*.39}
+\contentsline {subsection}{\numberline {11.4.8}Estado}{124}{subsection.11.4.8}
+\contentsline {subsubsection}{Modelo}{124}{section*.40}
+\contentsline {subsubsection}{Caso}{125}{section*.41}
+\contentsline {subsection}{\numberline {11.4.9}Estrategia}{126}{subsection.11.4.9}
+\contentsline {subsubsection}{Modelo}{126}{section*.42}
+\contentsline {subsubsection}{Caso}{127}{section*.43}
+\contentsline {subsection}{\numberline {11.4.10}Visitador}{128}{subsection.11.4.10}
+\contentsline {subsubsection}{Modelo}{128}{section*.44}
+\contentsline {subsubsection}{Caso}{129}{section*.45}
+\contentsline {subsection}{\numberline {11.4.11}M\IeC {\'e}todo Plantilla}{130}{subsection.11.4.11}
+\contentsline {subsubsection}{Modelo}{130}{section*.46}
+\contentsline {subsubsection}{Caso}{131}{section*.47}
+\contentsline {part}{\@mypartnumtocformat {III}{Conclusiones y Reflexiones}}{133}{part.3}
+\contentsline {chapter}{\numberline {12}Conclusiones}{135}{chapter.12}
+\contentsline {chapter}{\numberline {13}Trabajos Futuros}{137}{chapter.13}
 \contentsfinish 

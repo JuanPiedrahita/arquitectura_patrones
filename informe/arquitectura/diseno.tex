@@ -113,35 +113,152 @@ El proceso de recaudo en línea, consiste en todo lo relacionado con la compra y
 
 
 \section{Escenarios}
+En este seccion observaremos el modelamiento desde los cimientos de nuestra plataforma, de la seccion anterior concluimos el "QUE" del sistema o dicho en otras palabras que es lo que el cliente desea, a partir de la toma y organización de requerimientos procedemos a hacer un análisis del sistema que vamos a diseñar, a continuación observaremos diferentes herramientas que nos proveen unas bases para empezar a realizar nuestro sistema, conoceremos información actual y propondremos a grandes rasgos un modelo de posible solución a nuestro problema. 
 
-\subsection{Diagrma de secuencia}
 
-\subsection{Diagrma de comunicación}
+\subsection{Diagrama de secuencia}
+
+Un diagrama de secuencia es una herramienta que proporciona al usuario y al desarrollador el “COMO” del sistema, esto se refiere a como se van a abordar los requerimientos obtenidos en nuestro primer capítulo, estos requerimientos, ahora llamados procesos deben ser abordados por los actores que interactuaran directamente con el sistema, y de esta manera  que debe el sistema responder para llevar a cabo el proceso de manera óptima.
+
+En nuestro caso los procesos que abordaremos para dar respuesta a esta pregunta son los que mostraremos a continuación.
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=1.0\linewidth]{arquitectura/imagenes/DiagramaDeSequenciaRE}
+	\caption{Diagrama de secuencia Recaudo en Línea}
+\end{figure}
+
+En el diagrama de secuencia anterior, se describe la secuencia entre el cliente, un formulario de captura y un formulario de producto. Inicialmente el cliente escogerá un producto, lo que genera un llamado a formulario producto, quien a su vez, hace un llamado recursivo para agregar al carro de compras, terminado este proceso el cliente escogerá un medio de pago, haciendo un llamado al formulario de captura, quien antes de retornar un mensaje satisfactorio, verificara el medio de pago escogido y retornara un "ok", tras recibir el mensaje de satisfacción del medio de pago, el cliente ingresara sus datos en el formulario de captura y posteriormente seleccionara pagar, para lo cual recibirá una confirmación de compra.
+
+
+\newpage
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=1.0\linewidth]{arquitectura/imagenes/DiagramaDeSecuenciaPP}
+	\caption{Diagrama de secuencia Publicitar Producto}
+\end{figure}
+En el diagrama de secuencia anterior, se describe el proceso para crear y publicar un producto en la plataforma web del cliente. Inicialmente el administrador (cliente) deberá crear el producto, posteriormente seleccionara crear el producto mediante un formulario de administrador, en el cual colocara (seteara) las características del mismo, las cuales pasaran por una clase de control de producto y este a su vez creara el producto en la base de datos, con lo cual el formulario de administración del producto, retornara un mensaje de satisfacción. Por último el administrador, seleccionara subir a la web, haciendo un llamado a la interfaz PW producto, quien hará una consulta del producto, por medio de la clase control producto, para hacer una consulta en la base de datos.
+
+\subsection{Diagrama de comunicación}
+Un diagrama de comunicación le sirve al desarrollador para modelar las interacciones entre los objetos que hacen parte de un sistema en términos de mensajes en secuencia, esto se refiere a todas las acciones que pueden realizar los objetos del sistema sobre otros objetos del mismo sistema, después de realizado un diagrama de secuencia se facilita la creación de los diagramas de comunicación.
+
+A continuación mostraremos diagramas de comunicación de los procesos realizados en los anteriores diagramas de secuencia
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1.1\linewidth]{arquitectura/imagenes/Diagrama_comunicacion_re}
+	\caption{Diagrama de comunicación Recaudo en Línea}
+\end{figure}
+
+El diagrama de comunicación anterior, describe mediante que mensajes se comunica el cliente con las clases formulario de captura y formulario de producto. Con el formulario de captura se comunica mediante los mensajes, pagar, ingreso de datos del comprador, y escoger medio de pago, y con el formulario de producto se comunica mediante el mensaje  escoger producto, adicionalmente el formulario de captura se comunica, consigo mismo, mediante verificar medio de pago escogido, y el formulario de producto se comunica consigo mismo, mediante el mensaje agregar al carrito de compras.
+
+
+\newpage
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=1.1\linewidth]{arquitectura/imagenes/Diagrama_comunicacion_pp}
+	\caption{Diagrama de comunicación Promocionar Productos}
+	\label{fig:diagramacomunicacionpp}
+\end{figure}
+
+El diagrama de comunicación anterior, muestra la comunicación entre el cliente (administrador) y la interfaz PW producto (mediante el mensaje subir a la web) y la interfaz Formulario de administración producto, mediante el mensaje crear producto, quienes se comunican con la clase control producto, mediante los mensajes de consulta y setear características respectivamente, por otro lado, el administrador se comunica con el objeto producto, mediante el mensaje de creación. Por ultimo la clase control producto, se comunica con la base de datos, con los mensajes de consulta y creación de productos.
 
 \newpage
 
 \section{Clases}
+Un diagrama de clases es una forma de visualización de código de programación llevado a un nivel más sencillo para que el desarrollador tenga un mayor nivel de comprensión, por medio de estos diagramas se evidencia que existen soluciones a problemas recurrentes, estos son llamados patrones, el uso de patrones en el desarrollo de software no solo optimiza el funcionamiento del sistema si no permite la escalabilidad y la agregación de nuevas funciones 
+
+Para la solución propuesta al problema de la PYME  se presentan los siguientes diagramas de clases, usando patrones de diseño para el desarrollo de un sistema óptimo y escalable.
 
 \newpage
 
 \section{Componentes}
+Un componente es un objeto dentro de un sistema que cumple una funcionalidad específica, en un diagrama de componentes se pueden observar varios componentes relacionados entre sí, los componentes cumplen la característica que son cajas negras y además pueden implementar interfaces entre ellos
 
 \newpage
 
 \section{Nodos}
+Un diagrama de nodos nos permite como desarrolladores conocer los recursos físicos necesarios para que el sistema sea implementado, hay dos tipos de nodos, nodos dispositivo y procesador con los cuales tanto el desarrollador como el cliente puede interactuar, esto representa la comunicación y las relaciones entre el hardware para la modelación del sistema.
 
+A continuación observaremos el diagrama de nodos para nuestra plataforma web:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/DiagramaNodos}
+	\caption{Diagrama de nodos}
+	\label{fig:diagramanodos}
+\end{figure}
+
+Como podemos observar en el caso de nuestro proyecto se observan 7 nodos de los cuales el nodo del servidor jsj, la base de datos, y las páginas de las interfaces de usuario y administrador son primordiales
+En el nodo del servidor jsj se tienen todos los componentes que permiten el funcionamiento de la página de ventas de artículos deportivos
+Entre estos componentes encontramos acciones que serán ejecutadas dependiendo del tipo de usuario que ingrese
+Para el caso de la interfaz administrativa, contara con acciones como agregar, modificar o eliminar productos, estableciendo una conexión con los componentes del servidor que permiten realizar dichas acciones
+En el caso de la interfaz de usuario se dispondrá de acciones como la compra de los productos, y todo el proceso que conllevando estableciendo una comunicación con el servidor jsj que llamara a dichos componentes
+El servidor jsj tambien nececita una comunicación con una base de datos que se encargará de almacenar todo tipo de información relacionada con la pagina, como los productos, los usuarios, información de los pedidos, etc
+Los otros nodos que podemos encontrar como pc de usuario y de admin son recursos fisicos necesarios para la comunicacion con la pagina web
 \newpage
 
 \section{Sistemas}
+También llamado diagrama de paquetes se observa la organización jerárquica y de relación que tienen los paquetes de los cuales se compone el sistema, a partir de este podemos observar el rendimiento del sistema por medio de la evaluación de métricas.
+
+En el siguiente diagrama se evidencia la organización de las clases en el proyecto y su ubicación en los diferentes paquetes que implementa el proyecto.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{arquitectura/imagenes/DiagramaDeSistemas}
+	\caption{Diagrama de Sistemas}
+\end{figure}
+
 
 \newpage
 
 \section{Actividades}
+Un diagrama de actividades permite al desarrollador observar cómo se está realizando el proceso y como se comunican los diferentes actores, dentro de dichas actividades puede haber decisiones pero siempre el proceso debe acabar.
+
+En el siguiente diagrama de actividades se muestra como es el proceso de la compra de un producto, en la que intervienen 3 actores principales:
+\begin{enumerate}
+	\item Comprador: Se encarga de escoger el producto, que desea comprar, seleccionando un método de pago y recibiendo la confirmación de compra del mismo.
+	\item Plataforma: Se encarga de presentar el producto al comprador, y es el enlace entre en el comprador y el inventario, para la realización de cada acción.
+	\item Inventario: Se encarga de verificar la disponibilidad de cada producto, y actualizar el inventario del mismo.
+\end{enumerate}
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=1\linewidth]{arquitectura/imagenes/workflow}
+	\caption{Diagrama de actividades}
+	\label{fig:workflow}
+\end{figure}
+
+\newpage
+
+El proceso de compra de un producto empieza por el comprador que es el que escoge el producto deseado, enviando una petición a la plataforma, para verificar su existencia, la cual hace la consulta en el inventario para ver su disponibilidad, en este paso hay dos posibles opciones, en el caso de que no sea disponible, envía un aviso a la plataforma para que informe al comprador y se acaba la acción, en el caso de que sea disponible, la plataforma muestra los métodos de pago disponibles, una vez que el comprador escoja un método de pago, se validara en la plataforma y se procederá a enviar la facturación al comprador y a la actualización del inventario del producto.
+
 
 \newpage
 
 \section{Estados}
+Los estados son aquellas fases en las que el sistema puede estar, un diagrama de estados permite observar como son las transiciones entre estas fases, y cuáles son los lanzadores que con una condición activan estas transiciones, los estados son únicos. 
 
+A continuación veremos el diagrama de estados para el sistema de compra en línea planteado:
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{arquitectura/imagenes/diagramas_estados}
+	\caption{Diagrama de estado producto}
+\end{figure}
+
+En el anterior Diagrama de estados podemos ver la transición que tienen los productos desde el momento en que se cargan a la página, hasta que se realiza exitosamente una  compra, para esto nos basamos en 4 estados posibles, en inventario, en carrito, vendido, agotado, el producto empieza en un estado base de en inventario con una cantidad disponible, cuando se agrega el producto a carrito se cambia de estado a en carrito, en donde tiene dos posibles disparadores, que son desagregar de carrito y confirmar compra, si se desagrega del carrito, regresara a su estado base en inventario, si se confirma la compra cambiara de estado ha vendido, en donde se actualizara el inventario, si la cantidad comprada es igual a la disponibles en inventario, el producto quedara en un estado de agotado, si aún hay unidades disponibles volverá a un estado de inventario, a partir de ahí podemos crear una clase producto la cual podrá contener cualquiera de los 4 estados como se muestra a continuación:
+
+
+\newpage
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=1\linewidth]{arquitectura/imagenes/clase_producto_estados}
+	\caption{Clase producto estado}
+\end{figure}
+
+En este diagrama de clase se muestran los métodos necesarios para realizar las transiciones de un estado.
 \newpage
 
 
