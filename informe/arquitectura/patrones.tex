@@ -365,8 +365,38 @@ El patrón observador es utilizado en nuestro caso debido a la necesidad que ten
 
 \subsection{Estrategia}
 \subsubsection{Modelo}
-\newpage
+El patrón \textbf{Strategy o Estrategia} encapsula algoritmos en clases, permitiendo que éstos sean re-utilizados e intercambiables. En base a un parámetro, que puede ser cualquier objeto, permite a una aplicación decidir en tiempo de ejecución el algoritmo que debe ejecutar.
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=1\linewidth]{arquitectura/imagenes/modeloEstrategia}
+	\caption{Metamodelo del Patrón Estrategia}
+	\label{fig:metamodelo patron estrategia}
+\end{figure}
+
+Las clases que usa este patrón son:
+\begin{itemize}
+	\item \textbf{Estrategia: }Declara una interfaz común a todos los algoritmos soportados.
+	\item \textbf{Estrategia Concreta: }Implementa un algoritmo utilizando la interfaz Estrategia. Es la representación de un algoritmo.
+	\item \textbf{Contexto: }Mantiene una referencia a Estrategia y según las características del contexto, optará por una estrategia determinada.
+	\item \textbf{Cliente: }Solicita un servicio a Estrategia y este debe devolver el resultado de la Estrategia Concreta.
+\end{itemize}
+
 \subsubsection{Caso de estudio}
+
+	\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1.0\linewidth]{arquitectura/imagenes/DiagramaEstrategia}
+	\caption{Diagrama de clases patrón Estrategia}
+	\label{fig:patronEstrategia}
+	\end{figure}
+
+
+Como se puede observar en la figura \ref{fig:patronEstrategia} en este caso se aplica la estrategia para solicitar al cliente el recaudo del pago, debido a que se tienen diferentes de formas o posibilidades de pago y cada pago se hace de forma diferente, en este caso la factura solicita recaudar el  pago y conforme al método escogido por el cliente se ejecutará la estrategia correspondiente.\newline
+Debido a que cada medio de pago requiere agregar recargos diferentes, como es el caso de la forma de pago de consignación y de tarjeta que requieren agregar los impuestos correspondientes, o el caso del pago a contra entrega en donde es necesario agregar el recargo del mensajero que se encargará de entregar el producto al cliente y cobrar el valor correspondiente al total.\newline
+Al igual que los recargos que se agregan son diferentes, también son diferentes las formas de recaudar el pago para cada modalidad, en el caso de la contra entrega el usuario es redirigido a confirmar los datos de envió, el método de pago con tarjeta requiere comunicarse con la plataforma de pagos y la consignación redirigir al banco correspondiente.\newline
+El uso de este patrón nos permite que a futuro sea posible agregar nuevas formas de pago sin tener que modificar el código y la implementación ya existente.
+
 \newpage
 
 \subsection{Visitador}

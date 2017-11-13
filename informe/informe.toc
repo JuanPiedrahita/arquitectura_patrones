@@ -204,7 +204,7 @@
 \contentsline {subsubsection}{Caso de estudio}{120}{section*.49}
 \contentsline {subsection}{\numberline {11.4.9}Estrategia}{121}{subsection.11.4.9}
 \contentsline {subsubsection}{Modelo}{121}{section*.50}
-\contentsline {subsubsection}{Caso de estudio}{122}{section*.51}
+\contentsline {subsubsection}{Caso de estudio}{121}{section*.51}
 \contentsline {subsection}{\numberline {11.4.10}Visitador}{123}{subsection.11.4.10}
 \contentsline {subsubsection}{Modelo}{123}{section*.52}
 \contentsline {subsubsection}{Caso de estudio}{124}{section*.53}
