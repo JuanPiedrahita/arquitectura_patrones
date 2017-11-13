@@ -66,7 +66,7 @@ Segín esto, podemos decir que los componentes típicos del patrón Fábrica Abs
 
 
 
-\subsubsection{Caso}
+\subsubsection{Caso de estudio}
 
 	\begin{figure}[th!]
 		\centering
@@ -85,19 +85,19 @@ Segín esto, podemos decir que los componentes típicos del patrón Fábrica Abs
 \subsection{constructor}
 \subsubsection{Modelo}
 \newpage
-\subsubsection{Caso}
+\subsubsection{Caso de estudio}
 \newpage
 
 \subsection{Método Fábrica}
 \subsubsection{Modelo}
 \newpage
-\subsubsection{Caso}
+\subsubsection{Caso de estudio}
 \newpage
 
 \subsection{Prototipo}
 \subsubsection{Modelo}
 \newpage
-\subsubsection{Caso}
+\subsubsection{Caso de estudio}
 \newpage
 
 \section{Patrones Estructurales}
@@ -118,7 +118,7 @@ Los patrones que se encuentran en la lista de Patrones Estructurales en el enfoq
 \subsection{Adaptador}
 \subsubsection{Modelo}
 \newpage
-\subsubsection{Caso}
+\subsubsection{Caso de estudio}
 \newpage
 
 
@@ -143,7 +143,7 @@ Este patrón busca eliminar la inconveniencia de esta solución. Las clases mane
 	\item \textbf{Implementador Concreto: }Implementa la interface de Implementador y define su implementación concreta.
 \end{itemize}
 
-\subsubsection{Caso}
+\subsubsection{Caso de estudio}
 
 \begin{figure}[th!]
 \centering
@@ -161,25 +161,25 @@ El patrón bridge, es un puente entre la abstracción de una base de datos y sus
 \subsection{componente}
 \subsubsection{Modelo}
 \newpage
-\subsubsection{Caso}
+\subsubsection{Caso de estudio}
 \newpage
 
 \subsection{Decorador}
 \subsubsection{Modelo}
 \newpage
-\subsubsection{Caso}
+\subsubsection{Caso de estudio}
 \newpage
 
 \subsection{Peso Ligero}
 \subsubsection{Modelo}
 \newpage
-\subsubsection{Caso}
+\subsubsection{Caso de estudio}
 \newpage
 
 \subsection{Proxy}
 \subsubsection{Modelo}
 \newpage
-\subsubsection{Caso}
+\subsubsection{Caso de estudio}
 \newpage
 
 \subsection{Fachada}
@@ -202,7 +202,7 @@ Las clases utilizadas por este patrón son:
 \end{itemize}
 
 
-\subsubsection{Caso}
+\subsubsection{Caso de estudio}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.8\linewidth]{arquitectura/imagenes/DiagramaFachada}
@@ -233,25 +233,51 @@ Los patrones que se encuentran en la lista de Patrones de Comportamiento en el e
 \subsection{Comando}
 \subsubsection{Modelo}
 \newpage
-\subsubsection{Caso}
+\subsubsection{Caso de estudio}
 \newpage
 
 \subsection{Cadena de Responsabilidades}
 \subsubsection{Modelo}
 \newpage
-\subsubsection{Caso}
+\subsubsection{Caso de estudio}
 \newpage
 
 \subsection{Iterador}
 \subsubsection{Modelo}
-\newpage
-\subsubsection{Caso}
+El patrón \textbf{Iterator o Iterador} provee un mecanismo estándar para acceder secuencialmente a los elementos de una colección; define una interface que declara métodos para acceder secuencialmente a los objetos de una colección. Una clase accede a una colección a través de dicha interface.
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.8\linewidth]{arquitectura/imagenes/modeloIterador}
+	\caption{Metamodelo Patrón Iterador}
+	\label{fig:metamodelo patron iterador}
+\end{figure}
+
+\begin{itemize}
+	\item \textbf{Agregado: }Define una interfaz para crear un objeto iterator.
+	\item \textbf{Iterador: }Define la interfaz para acceder y recorrer los elementos de un agregado.
+	\item \textbf{Iterador Concreto: }Implementa la interfaz del iterador y guarda la posición actual del recorrido en cada momento.
+	\item \textbf{Agregado Concreto: }Implementa la interfaz de creación de iteradores devolviendo una instancia del iterador concreto apropiado.
+	\item \textbf{Cliente: }Solicita recorrer una colección y lo hace siguiendo los métodos otorgados por la interfaz Iterator. 
+\end{itemize}
+
+\subsubsection{Caso de estudio}
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{arquitectura/imagenes/DiagramaIterador}
+	\caption{Diagrama de clases para el patrón Iterador}
+	\label{fig:patronIterador}
+\end{figure}
+
+En este caso se puede observar en la figura \ref{fig:patronIterador} que se hace uso del patrón iterador para iterar por cada uno de los elementos del carrito de compras. En este caso nuestro cliente es cada uno de los productos que pertenecen al carrito, el carrito abstracto tiene una lista de productos que son los escogidos por el cliente, cuando el cliente manipula el carrito de compras se le permite agregar o eliminar productos de este, una vez este ha decidido que desea comprar todos los elementos que tiene en el carrito es necesario para generar la factura y seguir con el proceso de pago saber el total del valor de los productos que el cliente escogió, para esto se hace uso del IteradorCarrito  el cual recorre el arreglo de productos del carrito preguntando si hay más elementos y obteniendo el valor del producto actual multiplicando el valor de la unidad por la cantidad escogida por el cliente; una vez el iterador define que no hay más elementos siguientes se puede mostrar el valor del total al cliente y continuar con el proceso de pago.
+
 \newpage
 
 \subsection{Inrterprete}
 \subsubsection{Modelo}
 \newpage
-\subsubsection{Caso}
+\subsubsection{Caso de estudio}
 \newpage
 
 \subsection{Mediador}
@@ -291,7 +317,7 @@ En este caso se plantea una interfaz abstracta para cada usuario que tiene dos m
 \subsection{Momento}
 \subsubsection{Modelo}
 \newpage
-\subsubsection{Caso}
+\subsubsection{Caso de estudio}
 \newpage
 
 \subsection{Observador}
@@ -317,7 +343,7 @@ Las clases definidas para este patrón son:
 
 
 
-\subsubsection{Caso}
+\subsubsection{Caso de estudio}
 	\begin{figure}[h!]
 	\centering
 	\includegraphics[width=1.0\linewidth]{arquitectura/imagenes/DiagramaObservador}
@@ -334,19 +360,19 @@ El patrón observador es utilizado en nuestro caso debido a la necesidad que ten
 \subsection{Estado}
 \subsubsection{Modelo}
 \newpage
-\subsubsection{Caso}
+\subsubsection{Caso de estudio}
 \newpage
 
 \subsection{Estrategia}
 \subsubsection{Modelo}
 \newpage
-\subsubsection{Caso}
+\subsubsection{Caso de estudio}
 \newpage
 
 \subsection{Visitador}
 \subsubsection{Modelo}
 \newpage
-\subsubsection{Caso}
+\subsubsection{Caso de estudio}
 \newpage
 
 \subsection{Método Plantilla}
@@ -367,7 +393,7 @@ Las clases definidas en el modelo del patrón plantilla son:
 	\item \textbf{Plantilla Concreta: }Implementa los métodos abstractos para realizar los pasos del algoritmo que son específicos de la subclase.
 \end{itemize}
 
-\subsubsection{Caso}
+\subsubsection{Caso de estudio}
 
 
 \newpage
