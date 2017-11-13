@@ -151,7 +151,7 @@
 \contentsline {subsection}{\numberline {11.2.3}M\IeC {\'e}todo F\IeC {\'a}brica}{88}{subsection.11.2.3}
 \contentsline {subsubsection}{Modelo}{88}{section*.12}
 \contentsline {subsubsection}{Caso de estudio}{89}{section*.13}
-\contentsline {subsection}{\numberline {11.2.4}Prototipo}{90}{subsection.11.2.4}
+\contentsline {subsection}{\numberline {11.2.4}Singleton}{90}{subsection.11.2.4}
 \contentsline {subsubsection}{Modelo}{90}{section*.14}
 \contentsline {subsubsection}{Caso de estudio}{91}{section*.15}
 \contentsline {section}{\numberline {11.3}Patrones Estructurales}{92}{section.11.3}
@@ -208,7 +208,7 @@
 \contentsline {subsection}{\numberline {11.4.9}Estrategia}{121}{subsection.11.4.9}
 \contentsline {subsubsection}{Modelo}{121}{section*.50}
 \contentsline {subsubsection}{Caso de estudio}{122}{section*.51}
-\contentsline {subsection}{\numberline {11.4.10}Visitador}{123}{subsection.11.4.10}
+\contentsline {subsection}{\numberline {11.4.10}Memento}{123}{subsection.11.4.10}
 \contentsline {subsubsection}{Modelo}{123}{section*.52}
 \contentsline {subsubsection}{Caso de estudio}{124}{section*.53}
 \contentsline {subsection}{\numberline {11.4.11}M\IeC {\'e}todo Plantilla}{125}{subsection.11.4.11}

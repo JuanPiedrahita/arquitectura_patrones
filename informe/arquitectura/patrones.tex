@@ -94,10 +94,40 @@ Segín esto, podemos decir que los componentes típicos del patrón Fábrica Abs
 \subsubsection{Caso de estudio}
 \newpage
 
-\subsection{Prototipo}
+\subsection{Singleton}
 \subsubsection{Modelo}
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/PatronSingelton}
+	\caption{Metamodelo patron Singleton}
+\end{figure}
+
+La idea del patrón Singleton es proveer un mecanismo para limitar el número de instancias de una clase. Por lo tanto el mismo objeto es siempre compartido por distintas partes del código. Puede ser visto como una solución más elegante para una variable global porque los datos son abstraídos por detrás de la interfaz que publica la clase singleton.
+Dicho de otra manera, esta patrón busca garantizar que una clase sólo tenga una instancia y proporcionar un punto de acceso global a ella.
+
+Debe usarse cuando:
+\begin{enumerate}
+	\item Debe haber exactamente una instancia de una clase y deba ser accesible a los clientes desde un punto de acceso conocido.
+	\item Se requiere de un acceso estandarizado y conocido públicamente.
+\end{enumerate}
+  
+
+Sus usos más comunes son clases que representan objetos unívocos. Por ejemplo, si hay un servidor que necesita ser representado mediante un objeto, este debería ser único, es decir, debería existir una sola instancia y el resto de las clases deberían de comunicarse con el mismo servidor. Un Calendario, por ejemplo, también es único para todos.
+\newline
+
+Este patrón tiene una clase Singleton que define una instancia para los clientes que la acceden. Esta instancia es accedida desde un método llamado getInstancia que devuelve la instancia actual de la clase o crea una nueva en el caso de ser nula.
+
 \newpage
 \subsubsection{Caso de estudio}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/PatronSingeltonCasoEstudio}
+	\caption{Caso de estudio patron Singleton}
+\end{figure}
+
+Para nuestro caso de estudio tenemos una clase ConexionDB que es analoga a la clase singleton, esta tiene un metodo llamado getConexion que se encarga de retornar la instancia ya creada de la clase o en el caso de que aun no exista ninguna instancia crear una nueva.\newline
+La idea de  aplicar este patrón en la conexión, es para que una vez se haya establecido una conexión a la base de datos, se trabaje sobre la misma sesión y no se creen muchas conexiones dependiendo de lo que se vaya a realizar  
+
 \newpage
 
 \section{Patrones Estructurales}
@@ -359,8 +389,29 @@ El patrón observador es utilizado en nuestro caso debido a la necesidad que ten
 
 \subsection{Estado}
 \subsubsection{Modelo}
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/PatronEstado}
+	\caption{metamodelo patrón estado}
+	\label{fig:metamodelo patron estado}
+\end{figure}
+El patrón State o estado permite que un objeto modifique su comportamiento cada vez que cambie su estado interno. La intención del State es desacoplar el estado de la clase en cuestión. Las clases utilizadas son:
+\begin{enumerate}
+	\item Contexto:Mantiene una instancia con el estado actual Estado:Mantiene una instancia con el estado actual
+	\item EstadoConcreto:Cada subclase implementa el comportamiento asociado con un estado del contexto.
+\end{enumerate}  
 \newpage
+
 \subsubsection{Caso de estudio}
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/PatronEstadoCasoEstudio}
+	\caption{}
+	\label{fig:patronestadocasoestudio}
+\end{figure}
+
+
+En el anterior Diagrama de estados podemos ver la transición que tienen los productos desde el momento en que se cargan a la página, hasta que se realiza exitosamente una  compra, para esto nos basamos en 4 estados posibles, en inventario, en carrito, vendido, agotado, el producto empieza en un estado base de en inventario con una cantidad disponible, cuando se agrega el producto a carrito se cambia de estado a en carrito, en donde tiene dos posibles disparadores, que son desagregar de carrito y confirmar compra, si se desagrega del carrito, regresara a su estado base en inventario, si se confirma la compra cambiara de estado ha vendido, en donde se actualizara el inventario, si la cantidad comprada es igual a la disponibles en inventario, el producto quedara en un estado de agotado, si aún hay unidades disponibles volverá a un estado de inventario, a partir de ahí podemos crear una clase producto la cual podrá contener cualquiera de los 4 estados
 \newpage
 
 \subsection{Estrategia}
@@ -369,10 +420,42 @@ El patrón observador es utilizado en nuestro caso debido a la necesidad que ten
 \subsubsection{Caso de estudio}
 \newpage
 
-\subsection{Visitador}
+\subsection{Memento}
 \subsubsection{Modelo}
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{arquitectura/imagenes/PatronMemento}
+	\caption{Metamodelo patron memento}
+	\label{fig:Metamodelo patron memento}
+\end{figure}
+
+Este patrón de diseño permite capturar y exportar el estado interno de un objeto para que luego se pueda restaurar, sin romper la encapsulación.
+Su finalidad es almacenar el estado de un objeto (o del sistema completo) en un momento dado, de manera que se pueda restaurar posteriormente si fuese necesario. Para ello se mantiene almacenado el estado del objeto para un instante de tiempo en una clase independiente de aquella a la que pertenece el objeto (pero sin romper la encapsulación), de forma que ese recuerdo permita que el objeto sea modificado y pueda volver a su estado anterior.
+\newline
+Se usa cuando:
+\begin{enumerate}
+	\item Se necesite restaurar el sistema desde estados pasados.
+	\item Se quiera facilitar el hacer y deshacer de determinadas operaciones, para lo que habrá que guardar los estados anteriores de los objetos sobre los que se opere (o bien recordar los cambios de forma incremental).
+\end{enumerate}
+Este patrón debe ser utilizado cuando se necesite salvar el estado de un objeto y tener disponible los distintos estados históricos que se necesiten.
+\newline
+Los componentes de este patrón son:
+\begin{enumerate}
+	\item Caretaker: es responsable por mantener a salvo a Memento. No opera o examina su contenido.
+	\item Memento: almacena el estado interno de un objeto Originator. El Memento puede almacenar todo o parte del estado
+	\item Originator: crea un objeto Memento conteniendo una fotografía de su estado interno
+\end{enumerate}
 \newpage
 \subsubsection{Caso de estudio}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/PatronMementoCasoEstudio}
+	\caption{Caso de estudio Patrón Memento}
+	\label{fig:Caso de estudio Patrón Memento}
+\end{figure}
+
+Para nuestro caso de estudio el patrón memento tiene las siguientes clases, una clase AccionesCompra, que se encarga de manejar las acciones relacionadas al carrito de compra, como agregar productos, eliminarlos, confirmar compra entre otras, cada vez que se visualizan los productos agregados al carrito, se genera un detalle de la venta, que tiene los productos y la cantidad que se va a comprar, es decir el estado del carrito, la clase memento tiene un estado que es el estado interno de la clase AccionesCompra en momento dado, y la clase CareTaker es la encarga de almacenar cada uno de los estados internos de la clase AccionesCompra y retornarlos cuando sea necesario.\newline
+El objetivo del uso de este patron en estas clases, es que una vez se esten visulizando los productos agregados al carrito de compras, y se eliminen por error se pueda deshacer esta accion y retornar al estado anterior del carrito, asi mismo tambien se podra rehacer la accion devolviendo el carrito a su ultimo estado.
 \newpage
 
 \subsection{Método Plantilla}
