@@ -44,18 +44,41 @@ Los patrones que se encuentran en la lista de Patrones Creacionales en el enfoqu
 
 \subsection{Fabrica Abstracta}
 \subsubsection{Modelo}
-\newpage
+
+El patrón \textbf{Abstract Factory o Fábrica Abstracta} resuleve el problema de crear familias de objetos. Permite trabajar con objetos de diferentes familias de manera que no se mezclen entre sí. El patrón Abstract Factory, por tanto, se recomienda cuando se determina la inclusión de nuevas familias de productos en un futuro, pero resultaría contraproducente si que necesita añadir nuevos productos o modificar los existentes, ya que tendría repercusión en todas las familias creadas.
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=1.0\linewidth]{arquitectura/imagenes/modeloFabAbs}
+	\caption{Metamodelo Patrón Fabrica Abstracta}
+	\label{fig:metamodelo fabrica abstracta}
+\end{figure}
+
+Segín esto, podemos decir que los componentes típicos del patrón Fábrica Abstracta son los siguientes:
+
+\begin{itemize}
+	\item \textbf{Cliente: }Entidad que llamará a la fábrica adecuada para crear uno de los objetos que provee dicha factoría, es decir, intentará obtener una instancia de alguno de los productos que entre en juego.
+	\item \textbf{Fábrica Abstracta: }Definición de la interfaz que usarán las diferentes factorías, como mínimo, debe ofrecer un método para la obtención de cada objeto que se pueda crear
+	\item \textbf{Fábricas Concretas: } Aquí se representarán las diferentes familias de los productos. Provee la instancia concreta del objeto que se encarga de crear.
+	\item \textbf{Producto Abstracto: }Definirá las interfaces para la familia de productos genéricos. El cliente trabajará directamenre sobre esta interfaz, que será implementada por los diferentes productos concretos.
+	\item \textbf{Producto Concreto: } Se encargará de la implementación específica de los diferentes productos.
+\end{itemize}
+
+
+
 \subsubsection{Caso}
 
-	\begin{figure}[h!]
+	\begin{figure}[th!]
 		\centering
-		\includegraphics[width=1.2\linewidth]{arquitectura/imagenes/DiagramaFabricaAbstracta}
+		\includegraphics[width=1\linewidth]{arquitectura/imagenes/DiagramaFabricaAbstracta}
 		\caption{Diagrama de clases Fabrica Abstracta}
 	\end{figure}
 	
 	
 	
 	En el diagrama podemos ver que, para nuestro caso tendremos diferentes líneas de productos que podrán ser registrados en la base de datos. Para esto usamos el patrón fabrica abstracta que nos permite crear familias de productos de acuerdo a la línea establecida, además este patrón permite el escalamiento del aplicativo en forma horizontal, con lo cual, podremos a futuro adicionar otras nuevas líneas o colecciones de productos, sin necesidad de modificar las líneas ya creadas.
+	
+	
 \newpage
 
 
@@ -99,11 +122,30 @@ Los patrones que se encuentran en la lista de Patrones Estructurales en el enfoq
 \newpage
 
 
-\subsection{Puente}\begin{figure}[h!]
+\subsection{Puente}
 	
 \subsubsection{Modelo}
-\newpage
+
+El patrón \textbf{Bridge o Puente} desacopla una abstracción de su implementación, de manera que ambas puedan variar de forma independiente. ¿Que quiere decir exactamente esto? Una abstracción se refiere a un comportamiento que una clase debería implementar, ya sea porque esta obligada por una interface o una clase abstracta. Por otro lado, con implementación se refiere a colocarle lógica a dicha obligación. Cuando un objeto tiene unas implementaciones posibles, la manera habitual de implementación es el uso de herencias. Muchas veces la herencia se puede tornar inmanejable y, por otro lado, acopla el código cliente con una implementación concreta. 
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=1\linewidth]{arquitectura/imagenes/modeloPuente}
+	\caption{Metamodelo Patrón Puente}
+	\label{fig:metamodelo puente}
+\end{figure}
+
+Este patrón busca eliminar la inconveniencia de esta solución. Las clases manejadas por este patrón son:
+\begin{itemize}
+	\item \textbf{Abstracción: }Define una interface abstracta. Mantiene una referencia a un objeto de tipo Implementor.
+	\item \textbf{Abstracción Refinada: }Extiende la interface definida por Abstracción 
+	\item \textbf{Implementador: }Define la interface para la implementación de clases. Esta interface no se tiene que corresponder exactamente con la interface de Abstraccion; de hecho, las dos interfaces pueden ser bastante diferentes entre sí. Típicamente la interface Implementador provee sólo operaciones primitivas, y Abstraccion define operaciones de alto nivel basadas en estas primitivas.
+	\item \textbf{Implementador Concreto: }Implementa la interface de Implementador y define su implementación concreta.
+\end{itemize}
+
 \subsubsection{Caso}
+
+\begin{figure}[th!]
 \centering
 \includegraphics[width=1.0\linewidth]{arquitectura/imagenes/DiagramaComandoYPuente}
 \caption{Diagrama de clases  Comando y Puente}
@@ -142,8 +184,32 @@ El patrón bridge, es un puente entre la abstracción de una base de datos y sus
 
 \subsection{Fachada}
 \subsubsection{Modelo}
-\newpage
+
+El patrón \textbf{Facade o Fachada} busca simplificar el sistema, desde el punto de vista del cliente, proporcionando una interfaz unificada para un conjunto de subsistemas, definiendo una interfaz de nivel más alto. Esto hace que el sistema sea más fácil de usar.
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{arquitectura/imagenes/modeloFachada}
+	\caption{Metamodelo Patrón Fachada}
+	\label{fig:metamodelo patron fachada}
+\end{figure}
+
+
+Las clases utilizadas por este patrón son:
+\begin{itemize}
+	\item \textbf{Fachada: }Conoce cuales clases del subsistema son responsables de una petición. Delega las peticiones de los clientes en los objetos del subsistema.
+	\item \textbf{Subsistema: }Manejar el trabajo asignado por el objeto Facade. No tienen ningún conocimiento de la Fachada (no guardan referencia de éste).
+\end{itemize}
+
+
 \subsubsection{Caso}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.8\linewidth]{arquitectura/imagenes/DiagramaFachada}
+	\caption{Diagrama de clases patrón Fachada}
+\end{figure}
+
+Este patrón nos permite ocultar al cliente y al admin lo que sucede detrás del formulario que utilizan, es decir oculta la lógica del programa, la cual no es interesante para ellos, podemos incluir varios subsistemas con este patrón y dejarlos solo visibles para los que esten realmente interesados en cada uno. 
 \newpage
 
 \section{Patrones de Comportamiento}
@@ -192,6 +258,15 @@ Los patrones que se encuentran en la lista de Patrones de Comportamiento en el e
 
 \subsubsection{Modelo}
 El patrón \textbf{Mediator o Mediador} define un objeto que hace de procesador central, y que se encarga coordinar las relaciones entre sus asociados o participantes. Este patrón permite la interacción de varios objetos, sin generar acoples fuertes en las relaciones. Todos los objetos se comunican con un mediador y es éste quién realiza la comunicación con el resto.
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.8\linewidth]{arquitectura/imagenes/modeloMediador}
+	\caption{Metamodelo Patrón Mediador}
+	\label{fig:metamodelo patron mediador}
+\end{figure}
+
+Donde para este patrón se define que:
 \begin{itemize}
 	\item \textbf{Mediador: }Define una interface para comunicarse con los objetos colegas.
 	\item \textbf{Mediador Concreto: }Implementa la interface y define como los colegas se comunican entre ellos.
@@ -221,7 +296,27 @@ En este caso se plantea una interfaz abstracta para cada usuario que tiene dos m
 
 \subsection{Observador}
 \subsubsection{Modelo}
-\newpage
+
+El patrón \textbf{Observer o Observador} es usado en programación para monitorear el estado de un objeto en un programa. La motivación principal de este patrón es su utilización como un sistema de detección de eventos en tiempo de ejecución.
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.8\linewidth]{arquitectura/imagenes/modeloObservador}
+	\caption{Metamodelo del Patrón Observador}
+	\label{fig:metamodelo patron observador}
+\end{figure}
+
+Las clases definidas para este patrón son:
+
+\begin{itemize}
+	\item \textbf{Tema: }Conoce a sus observadores y ofrece la posibilidad de añadir y eliminar observadores.
+	\item \textbf{Observador: }Define la interfaz que sirve para notificar a los observadores los cambios realizados en el Tema.
+	\item \textbf{Tema Concreto: }Almacena el estado que es objeto de interés de los observadores y envía un mensaje a sus observadores cuando su estado cambia.
+	\item \textbf{Observador Concreto: }Mantiene una referencia a un SubjectConcreto. Almacena el estado del Tema que le resulta de interés.
+\end{itemize}
+
+
+
 \subsubsection{Caso}
 	\begin{figure}[h!]
 	\centering
@@ -256,16 +351,23 @@ El patrón observador es utilizado en nuestro caso debido a la necesidad que ten
 
 \subsection{Método Plantilla}
 \subsubsection{Modelo}
-\newpage
-\subsubsection{Caso}
-\begin{figure}[h!]
+
+El patrón \textbf{Template Method o Método Plantilla} define una estructura algorítmica cuya lógica quedará a cargo de las subclases. Para ello, escribe una clase abstracta que contiene parte de la lógica necesaria para realizar su finalidad. En ella se define una estructura de herencia que sirve de plantilla ("Template" significa plantilla) de los métodos en las subclases.
+
+\begin{figure}[th!]
 	\centering
-	\includegraphics[width=1.0\linewidth]{arquitectura/imagenes/DiagramaFachada}
-	\caption{Diagrama de clases patrón Fachada}
+	\includegraphics[width=0.6\linewidth]{arquitectura/imagenes/ModeloPlantilla}
+	\caption{Metamodelo Patrón Método Plantilla}
+	\label{fig:metamodelo patron metodo plantilla}
 \end{figure}
 
+Las clases definidas en el modelo del patrón plantilla son:
+\begin{itemize}
+	\item \textbf{Plantilla Abstracta: }Implementa un método plantilla que define el esqueleto de un algoritmo y define métodos abstractos que deben implementar las subclases concretas
+	\item \textbf{Plantilla Concreta: }Implementa los métodos abstractos para realizar los pasos del algoritmo que son específicos de la subclase.
+\end{itemize}
 
+\subsubsection{Caso}
 
-Este patrón nos permite ocultar al cliente y al admin lo que sucede detrás del formulario que utilizan, es decir oculta la lógica del programa, la cual no es interesante para ellos, podemos incluir varios subsistemas con este patrón y dejarlos solo visibles para los realmente interesados en cada uno.
 
 \newpage
