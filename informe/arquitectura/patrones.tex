@@ -346,8 +346,41 @@ En este caso se plantea una interfaz abstracta para cada usuario que tiene dos m
 
 \subsection{Momento}
 \subsubsection{Modelo}
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{arquitectura/imagenes/PatronMemento}
+	\caption{Metamodelo patron memento}
+	\label{fig:Metamodelo patron memento}
+\end{figure}
+
+Este patrón de diseño permite capturar y exportar el estado interno de un objeto para que luego se pueda restaurar, sin romper la encapsulación.
+Su finalidad es almacenar el estado de un objeto (o del sistema completo) en un momento dado, de manera que se pueda restaurar posteriormente si fuese necesario. Para ello se mantiene almacenado el estado del objeto para un instante de tiempo en una clase independiente de aquella a la que pertenece el objeto (pero sin romper la encapsulación), de forma que ese recuerdo permita que el objeto sea modificado y pueda volver a su estado anterior.
+\newline
+Se usa cuando:
+\begin{enumerate}
+	\item Se necesite restaurar el sistema desde estados pasados.
+	\item Se quiera facilitar el hacer y deshacer de determinadas operaciones, para lo que habrá que guardar los estados anteriores de los objetos sobre los que se opere (o bien recordar los cambios de forma incremental).
+\end{enumerate}
+Este patrón debe ser utilizado cuando se necesite salvar el estado de un objeto y tener disponible los distintos estados históricos que se necesiten.
+\newline
+Los componentes de este patrón son:
+\begin{enumerate}
+	\item Caretaker: es responsable por mantener a salvo a Memento. No opera o examina su contenido.
+	\item Memento: almacena el estado interno de un objeto Originator. El Memento puede almacenar todo o parte del estado
+	\item Originator: crea un objeto Memento conteniendo una fotografía de su estado interno
+\end{enumerate}
 \newpage
+
 \subsubsection{Caso de estudio}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/PatronMementoCasoEstudio}
+	\caption{Caso de estudio Patrón Memento}
+	\label{fig:Caso de estudio Patrón Memento}
+\end{figure}
+
+Para nuestro caso de estudio el patrón memento tiene las siguientes clases, una clase AccionesCompra, que se encarga de manejar las acciones relacionadas al carrito de compra, como agregar productos, eliminarlos, confirmar compra entre otras, cada vez que se visualizan los productos agregados al carrito, se genera un detalle de la venta, que tiene los productos y la cantidad que se va a comprar, es decir el estado del carrito, la clase memento tiene un estado que es el estado interno de la clase AccionesCompra en momento dado, y la clase CareTaker es la encarga de almacenar cada uno de los estados internos de la clase AccionesCompra y retornarlos cuando sea necesario.\newline
+El objetivo del uso de este patron en estas clases, es que una vez se esten visulizando los productos agregados al carrito de compras, y se eliminen por error se pueda deshacer esta accion y retornar al estado anterior del carrito, asi mismo tambien se podra rehacer la accion devolviendo el carrito a su ultimo estado.
 \newpage
 
 \subsection{Observador}
@@ -420,43 +453,6 @@ En el anterior Diagrama de estados podemos ver la transición que tienen los pro
 \subsubsection{Caso de estudio}
 \newpage
 
-\subsection{Memento}
-\subsubsection{Modelo}
-\begin{figure}[th!]
-	\centering
-	\includegraphics[width=0.9\linewidth]{arquitectura/imagenes/PatronMemento}
-	\caption{Metamodelo patron memento}
-	\label{fig:Metamodelo patron memento}
-\end{figure}
-
-Este patrón de diseño permite capturar y exportar el estado interno de un objeto para que luego se pueda restaurar, sin romper la encapsulación.
-Su finalidad es almacenar el estado de un objeto (o del sistema completo) en un momento dado, de manera que se pueda restaurar posteriormente si fuese necesario. Para ello se mantiene almacenado el estado del objeto para un instante de tiempo en una clase independiente de aquella a la que pertenece el objeto (pero sin romper la encapsulación), de forma que ese recuerdo permita que el objeto sea modificado y pueda volver a su estado anterior.
-\newline
-Se usa cuando:
-\begin{enumerate}
-	\item Se necesite restaurar el sistema desde estados pasados.
-	\item Se quiera facilitar el hacer y deshacer de determinadas operaciones, para lo que habrá que guardar los estados anteriores de los objetos sobre los que se opere (o bien recordar los cambios de forma incremental).
-\end{enumerate}
-Este patrón debe ser utilizado cuando se necesite salvar el estado de un objeto y tener disponible los distintos estados históricos que se necesiten.
-\newline
-Los componentes de este patrón son:
-\begin{enumerate}
-	\item Caretaker: es responsable por mantener a salvo a Memento. No opera o examina su contenido.
-	\item Memento: almacena el estado interno de un objeto Originator. El Memento puede almacenar todo o parte del estado
-	\item Originator: crea un objeto Memento conteniendo una fotografía de su estado interno
-\end{enumerate}
-\newpage
-\subsubsection{Caso de estudio}
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/PatronMementoCasoEstudio}
-	\caption{Caso de estudio Patrón Memento}
-	\label{fig:Caso de estudio Patrón Memento}
-\end{figure}
-
-Para nuestro caso de estudio el patrón memento tiene las siguientes clases, una clase AccionesCompra, que se encarga de manejar las acciones relacionadas al carrito de compra, como agregar productos, eliminarlos, confirmar compra entre otras, cada vez que se visualizan los productos agregados al carrito, se genera un detalle de la venta, que tiene los productos y la cantidad que se va a comprar, es decir el estado del carrito, la clase memento tiene un estado que es el estado interno de la clase AccionesCompra en momento dado, y la clase CareTaker es la encarga de almacenar cada uno de los estados internos de la clase AccionesCompra y retornarlos cuando sea necesario.\newline
-El objetivo del uso de este patron en estas clases, es que una vez se esten visulizando los productos agregados al carrito de compras, y se eliminen por error se pueda deshacer esta accion y retornar al estado anterior del carrito, asi mismo tambien se podra rehacer la accion devolviendo el carrito a su ultimo estado.
-\newpage
 
 \subsection{Método Plantilla}
 \subsubsection{Modelo}

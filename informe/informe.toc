@@ -205,13 +205,10 @@
 \contentsline {subsection}{\numberline {11.4.9}Estrategia}{121}{subsection.11.4.9}
 \contentsline {subsubsection}{Modelo}{121}{section*.50}
 \contentsline {subsubsection}{Caso de estudio}{122}{section*.51}
-\contentsline {subsection}{\numberline {11.4.10}Memento}{123}{subsection.11.4.10}
+\contentsline {subsection}{\numberline {11.4.10}M\IeC {\'e}todo Plantilla}{123}{subsection.11.4.10}
 \contentsline {subsubsection}{Modelo}{123}{section*.52}
-\contentsline {subsubsection}{Caso de estudio}{124}{section*.53}
-\contentsline {subsection}{\numberline {11.4.11}M\IeC {\'e}todo Plantilla}{125}{subsection.11.4.11}
-\contentsline {subsubsection}{Modelo}{125}{section*.54}
-\contentsline {subsubsection}{Caso de estudio}{125}{section*.55}
-\contentsline {part}{\@mypartnumtocformat {III}{Conclusiones y Reflexiones}}{127}{part.3}
-\contentsline {chapter}{\numberline {12}Conclusiones}{129}{chapter.12}
-\contentsline {chapter}{\numberline {13}Trabajos Futuros}{131}{chapter.13}
+\contentsline {subsubsection}{Caso de estudio}{123}{section*.53}
+\contentsline {part}{\@mypartnumtocformat {III}{Conclusiones y Reflexiones}}{125}{part.3}
+\contentsline {chapter}{\numberline {12}Conclusiones}{127}{chapter.12}
+\contentsline {chapter}{\numberline {13}Trabajos Futuros}{129}{chapter.13}
 \contentsfinish 
