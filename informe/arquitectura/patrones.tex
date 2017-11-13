@@ -1,9 +1,45 @@
-\chapter{Patrones}
+\chapter{Patrones GoF}
 
 \section{Introducción}
 
-\section{Patrones Creacionales}
+Estos 23 patrones de diseño son los patrones más conocidos y usados en la actualidad en el campo del Diseño Orientado a Objetos. \newline
+En el año 1994, que apareció el libro “Design Patterns: Elements of Reusable Object Oriented Sofware” escrito por los ahora famosos Gang of Four (GoF, que en español es la pandilla de los cuatro) formada por Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides. Los integrantes de la pandilla de los cuatro recopilaron y documentaron 23 patrones de diseño aplicados usualmente por expertos diseñadores de software orientado a objetos. Desde luego que ellos no son los inventores ni los únicos involucrados, pero ese fue luego de la publicación de ese libro que empezó a difundirse con más fuerza la idea de patrones de diseño. \newline
+Los patrones de diseño el grupo de GoF clasifican en 3 grandes categorías basadas en su propósito: creacionales, estructurales y de comportamiento. \cite{gof}
 
+“Los patrones de diseño son el esqueleto de las soluciones a problemas comunes en el desarrollo de software.”, es decir,  los patrones de diseño brindan una solución ya probada y documentada a problemas de desarrollo de software que están sujetos a contextos similares. 
+Cuando se habla de un patrón de diseño es necesario tener presente los siguientes elementos que lo conforman: 
+\begin{itemize}
+	\item Nombre
+	\item Problema: Define cuando se debe aplicar el patrón.
+	\item Solución: Descripción abstracta de la respuesta que soluciona el problema.
+	\item Consecuencias: Beneficios y costos de hacer el uso del patrón.
+\end{itemize}  
+
+
+Los patrones se pueden clasificar en tres categorías como se muestra a continuación:
+
+\begin{itemize}
+	\item Patrones Creacionales: Instanciación de objetos.
+	\item Patrones Estructurales: Separan la interfaz de la implementación.
+	\item Patrones de Comportamiento: Caracterizan las formas en  	las que interactúan y reparten responsabilidades las distintas clases u objetos.
+\end{itemize}
+\newpage
+
+
+
+
+\section{Patrones Creacionales}
+\paragraph{Definición}
+Los patrones de diseño creacionales proporcionan ayuda a la hora de crear objetos apoyando el proceso de la toma de decisiones, incluso cuando esta toma de decisiones sea de forma dinámica. Además que tratan con las formas de crear instancias de objetos. El objetivo de estos patrones es de abstraer el proceso de instanciación y ocultar los detalles de cómo los objetos son creados o inicializados.
+\paragraph{Tipos de Patrones}
+Los patrones que se encuentran en la lista de Patrones Creacionales en el enfoque GOF son:
+\begin{enumerate}
+	\item Abstract Factory (Fábrica Abstracta)
+	\item Factory Method (Método Fabrica)
+	\item Prototype (Prototipo)
+	\item Builder (Constructor)
+	\item Singleton (Instancia Única)
+\end{enumerate}
 
 
 \subsection{Fabrica Abstracta}
@@ -42,6 +78,19 @@
 \newpage
 
 \section{Patrones Estructurales}
+\paragraph{Definición}
+Los patrones estructurales se enfocan en como las clases y objetos se componen para formar estructuras mayores, ademas describen como las estructuras compuestas por clases crecen para crear nuevas funcionalidades de manera que se puede agregar a la estructura flexibilidad y que la misma pueda cambiar en tiempo de ejecución lo cual es imposible con una composición de clases estáticas.
+\paragraph{Tipos de Patrones}
+Los patrones que se encuentran en la lista de Patrones Estructurales en el enfoque GOF son:
+\begin{enumerate}
+	\item Bridge (Puente)
+	\item Adapter (Adaptador)
+	\item Composite (Componente)
+	\item Decorator (Decorador)
+	\item Facade (Fachada)
+	\item Flyweight (Peso Ligero) 
+	\item Proxy (Proxy)
+\end{enumerate}
 
 \subsection{Adaptador}
 \subsubsection{Modelo}
@@ -98,6 +147,22 @@ El patrón bridge, es un puente entre la abstracción de una base de datos y sus
 \newpage
 
 \section{Patrones de Comportamiento}
+\paragraph{Definición}
+Los patrones de Comportamiento son los patrones ofrecen soluciones con respecto a la interacción y responsabilidades que hay entre objetos y clases, y las interacciones que hay entre estos ademas de los algoritmos que estos contiene.
+\paragraph{Tipos de Patrones}
+Los patrones que se encuentran en la lista de Patrones de Comportamiento en el enfoque GOF son:
+\begin{enumerate}
+	\item Command (Comando)
+	\item Chain of Responsability (Cadena de responsabilidades)
+	\item Iterator (Iterador)
+	\item Interpreter (Interprete)
+	\item Mediator (Mediador)
+	\item Observer (Observador)
+	\item State (Estado)
+	\item Strategy (Estrategia)
+	\item Template Method (Método Plantilla)
+	\item Visitor (Visitante)
+\end{enumerate}
 
 \subsection{Comando}
 \subsubsection{Modelo}

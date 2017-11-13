@@ -17,6 +17,9 @@ A level-1 auxiliary file: conclusiones/anexos.aux
 Database file #1: libros.bib
 Database file #2: articulos.bib
 Database file #3: enlaces.bib
+Warning--entry type for "gof" isn't style-file defined
+--line 2 of file enlaces.bib
+Warning--to sort, need author or key in gof
 Warning--empty publisher in pun7
 Warning--empty year in pun7
 Warning--empty publisher in pun2
@@ -45,4 +48,4 @@ Warning--empty publisher in togaf2
 Warning--empty year in togaf2
 Warning--empty publisher in togaf1
 Warning--empty year in togaf1
-(There were 28 warnings)
+(There were 30 warnings)
