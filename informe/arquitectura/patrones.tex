@@ -189,9 +189,28 @@ Los patrones que se encuentran en la lista de Patrones de Comportamiento en el e
 \newpage
 
 \subsection{Mediador}
+
 \subsubsection{Modelo}
-\newpage
-\subsubsection{Caso}
+El patrón \textbf{Mediator o Mediador} define un objeto que hace de procesador central, y que se encarga coordinar las relaciones entre sus asociados o participantes. Este patrón permite la interacción de varios objetos, sin generar acoples fuertes en las relaciones. Todos los objetos se comunican con un mediador y es éste quién realiza la comunicación con el resto.
+\begin{itemize}
+	\item \textbf{Mediador: }Define una interface para comunicarse con los objetos colegas.
+	\item \textbf{Mediador Concreto: }Implementa la interface y define como los colegas se comunican entre ellos.
+	\item \textbf{Colega: }Define el comportamiento que debe implementar cada colega para poder comunicarse el mediador de una manera estandarizada para todos.
+	\item \textbf{Colega Concreto: }Cada colega conoce su mediador, y lo usa para comunicarse con otros colegas.
+\end{itemize}
+
+%%\newpage
+\subsubsection{Caso de estudio}
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=1\linewidth]{arquitectura/imagenes/DiagramaMediator}
+	\caption{Diagrama de clases Mediador}
+\end{figure}
+
+Para este caso en especifico se hace uso de patrón observador en su ejemplo más común no por simplicidad sino porque haciendo uso de este se satisface perfectamente uno de los principales requerimientos del sistema el cual es brindar un mecanismo para que a pesar de ser una tienda virtual los usuarios puedan seguir comunicandose con los asesores. \newline
+En este caso se plantea una interfaz abstracta para cada usuario que tiene dos métodos, enviar y recibir mensaje, esta se implementa en cada usuario que a su vez tiene un nombre que lo identifica en el foro y le permitirá distinguirse de los demás y ademas conoce el foro. La interfaz abstracta AForo tiene dos métodos que permiten a los usuarios suscribirse al foro y el método enviar que es donde se realizara todo el proceso de registro y envio del mensaje, esta interfaz la implementa la Clase Foro que además tiene un arreglo de usuarios que son los usuarios que pertenecen al chat.
+
 \newpage
 
 \subsection{Momento}
