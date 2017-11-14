@@ -217,6 +217,124 @@ Un diagrama de clases es una forma de visualización de código de programación
 
 Para la solución propuesta al problema de la PYME JSJSports se presentan los siguientes diagramas de clases, usando patrones de diseño para el desarrollo de un sistema óptimo y escalable.
 
+\subsection*{Diagrama de clases Fabrica Abstracta}
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=1\linewidth]{arquitectura/imagenes/DiagramaFabricaAbstracta}
+	\caption{Diagrama de clases Fabrica Abstracta}
+\end{figure}
+
+En el diagrama podemos ver que, para nuestro caso tendremos diferentes líneas de productos que podrán ser registrados en la base de datos. Para esto usamos el patrón fabrica abstracta que nos permite crear familias de productos de acuerdo a la línea establecida, además este patrón permite el escalamiento del aplicativo en forma horizontal, con lo cual, podremos a futuro adicionar otras nuevas líneas o colecciones de productos, sin necesidad de modificar las líneas ya creadas.
+
+\subsection*{Diagrama de clases Método Fábrica}
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/DiagramaMetodoFabrica}
+	\caption{Diagrama de clases Patrón Método Fábrica}
+\end{figure}
+
+Para el caso de estudio se puede observar que se implemento el método fabrica para facilitar la creación del tipo de usuarios que maneja el sistema, en este caso cada usuario tiene asociados unas opciones, por ejemplo el usuario no registrado no puede realizar una compra, el usuario registrado si, entre otros, para crear un usuario para cada caso cuando se necesite y saber las opciones que este tiene asociadas se implemento este patrón.
+
+\subsubsection*{Diagrama de clases Singleton}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{arquitectura/imagenes/PatronSingeltonCasoEstudio}
+	\caption{Diagrama de clases Patrón Singleton}
+\end{figure}
+
+Para nuestro caso de estudio tenemos una clase ConexionDB que es analoga a la clase singleton, esta tiene un metodo llamado getConexion que se encarga de retornar la instancia ya creada de la clase o en el caso de que aun no exista ninguna instancia crear una nueva.\newline
+La idea de  aplicar este patrón en la conexión, es para que una vez se haya establecido una conexión a la base de datos, se trabaje sobre la misma sesión y no se creen muchas conexiones dependiendo de lo que se vaya a realizar  
+
+\subsubsection*{Diagrama de clases Patrones Comando y Puente}
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=1.0\linewidth]{arquitectura/imagenes/DiagramaComandoYPuente}
+	\caption{Diagrama de clases  Comando y Puente}
+\end{figure}
+
+
+
+El patrón comando utilizado en este caso permite separar y simplificar el uso de los botones y la función de cada uno en distintas opciones presentadas al usuario, para este caso particular están definidos los casos en los que el Admin crea, modifica, elimina o agrega un nuevo producto a la base de datos.
+El patrón bridge, es un puente entre la abstracción de una base de datos y sus funciones con la lógica de estas funciones de acuerdo con el tipo de base de datos, puesto que la manera en que se borra, crea, agrega o modifica es diferente en cada base de datos (MySQL, Postgres, etc), de manera que en la base concreta se define el método en que cada función de la abstracción, realiza su operación. Esto permite que más adelante podamos agregar otras bases de datos a nuestro aplicativo sin la necesidad de modificar el código ya creado, y haciendo escalamiento de nuestro programa de manera horizontal.
+
+\subsubsection*{Diagrama de clases Patrón Fachada}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.6\linewidth]{arquitectura/imagenes/DiagramaFachada}
+	\caption{Diagrama de clases Patrón Fachada}
+\end{figure}
+
+Este patrón nos permite ocultar al cliente y al admin lo que sucede detrás del formulario que utilizan, es decir oculta la lógica del programa, la cual no es interesante para ellos, podemos incluir varios subsistemas con este patrón y dejarlos solo visibles para los que esten realmente interesados en cada uno. 
+
+\subsubsection*{Diagrama de clases Patrón Iterador}
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.9\linewidth]{arquitectura/imagenes/DiagramaIterador}
+	\caption{Diagrama de clases Patrón Iterador}
+	\label{fig:patronIterador2}
+\end{figure}
+
+En este caso se puede observar en la figura \ref{fig:patronIterador2} que se hace uso del patrón iterador para iterar por cada uno de los elementos del carrito de compras. En este caso nuestro cliente es cada uno de los productos que pertenecen al carrito, el carrito abstracto tiene una lista de productos que son los escogidos por el cliente, cuando el cliente manipula el carrito de compras se le permite agregar o eliminar productos de este, una vez este ha decidido que desea comprar todos los elementos que tiene en el carrito es necesario para generar la factura y seguir con el proceso de pago saber el total del valor de los productos que el cliente escogió, para esto se hace uso del IteradorCarrito  el cual recorre el arreglo de productos del carrito preguntando si hay más elementos y obteniendo el valor del producto actual multiplicando el valor de la unidad por la cantidad escogida por el cliente; una vez el iterador define que no hay más elementos siguientes se puede mostrar el valor del total al cliente y continuar con el proceso de pago.
+
+\subsubsection*{Diagrama de clases Patrón Mediador}
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=1\linewidth]{arquitectura/imagenes/DiagramaMediator}
+	\caption{Diagrama de clases Patrón Mediador}
+\end{figure}
+
+Para este caso en especifico se hace uso de patrón observador en su ejemplo más común no por simplicidad sino porque haciendo uso de este se satisface perfectamente uno de los principales requerimientos del sistema el cual es brindar un mecanismo para que a pesar de ser una tienda virtual los usuarios puedan seguir comunicandose con los asesores. \newline
+En este caso se plantea una interfaz abstracta para cada usuario que tiene dos métodos, enviar y recibir mensaje, esta se implementa en cada usuario que a su vez tiene un nombre que lo identifica en el foro y le permitirá distinguirse de los demás y ademas conoce el foro. La interfaz abstracta AForo tiene dos métodos que permiten a los usuarios suscribirse al foro y el método enviar que es donde se realizara todo el proceso de registro y envio del mensaje, esta interfaz la implementa la Clase Foro que además tiene un arreglo de usuarios que son los usuarios que pertenecen al chat.
+
+\subsubsection{Diagrama de clases Patrón Memento}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/PatronMementoCasoEstudio}
+	\caption{Diagrama de clases Patrón Memento}
+
+\end{figure}
+
+Para nuestro caso de estudio el patrón memento tiene las siguientes clases, una clase AccionesCompra, que se encarga de manejar las acciones relacionadas al carrito de compra, como agregar productos, eliminarlos, confirmar compra entre otras, cada vez que se visualizan los productos agregados al carrito, se genera un detalle de la venta, que tiene los productos y la cantidad que se va a comprar, es decir el estado del carrito, la clase memento tiene un estado que es el estado interno de la clase AccionesCompra en momento dado, y la clase CareTaker es la encarga de almacenar cada uno de los estados internos de la clase AccionesCompra y retornarlos cuando sea necesario.\newline
+El objetivo del uso de este patron en estas clases, es que una vez se esten visulizando los productos agregados al carrito de compras, y se eliminen por error se pueda deshacer esta accion y retornar al estado anterior del carrito, asi mismo tambien se podra rehacer la accion devolviendo el carrito a su ultimo estado.
+
+\subsubsection*{Diagrama de clases Patrón Observador}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1.0\linewidth]{arquitectura/imagenes/DiagramaObservador}
+	\caption{Diagrama de clases Patrón Observador}
+\end{figure}
+
+El patrón observador es utilizado en nuestro caso debido a la necesidad que tenemos de estar actualizando constantemente los datos de los productos en los formularios del Admin y el Cliente, ya sea actualizando el estado del producto en el stack, o alguna de sus características cada vez que entramos a modificarlas, este patrón nos permite facilitar esta actualización directamente en nuestra base de datos.
+
+\subsubsection*{Diagrama de clases Patrón Estado}
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/PatronEstadoCasoEstudio}
+	\caption{Diagrama de clases Patrón Estado}
+\end{figure}
+
+
+En el anterior Diagrama de estados podemos ver la transición que tienen los productos desde el momento en que se cargan a la página, hasta que se realiza exitosamente una  compra, para esto nos basamos en 4 estados posibles, en inventario, en carrito, vendido, agotado, el producto empieza en un estado base de en inventario con una cantidad disponible, cuando se agrega el producto a carrito se cambia de estado a en carrito, en donde tiene dos posibles disparadores, que son desagregar de carrito y confirmar compra, si se desagrega del carrito, regresara a su estado base en inventario, si se confirma la compra cambiara de estado ha vendido, en donde se actualizara el inventario, si la cantidad comprada es igual a la disponibles en inventario, el producto quedara en un estado de agotado, si aún hay unidades disponibles volverá a un estado de inventario, a partir de ahí podemos crear una clase producto la cual podrá contener cualquiera de los 4 estados
+
+\subsubsection*{Diagrama de clases Patrón Estrategia}
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=1.0\linewidth]{arquitectura/imagenes/DiagramaEstrategia}
+	\caption{Diagrama de clases Patrón Estrategia}
+	\label{fig:patronEstrategia1}
+\end{figure}
+
+
+Como se puede observar en la figura \ref{fig:patronEstrategia1} en este caso se aplica la estrategia para solicitar al cliente el recaudo del pago, debido a que se tienen diferentes de formas o posibilidades de pago y cada pago se hace de forma diferente, en este caso la factura solicita recaudar el  pago y conforme al método escogido por el cliente se ejecutará la estrategia correspondiente.\newline
+Debido a que cada medio de pago requiere agregar recargos diferentes, como es el caso de la forma de pago de consignación y de tarjeta que requieren agregar los impuestos correspondientes, o el caso del pago a contra entrega en donde es necesario agregar el recargo del mensajero que se encargará de entregar el producto al cliente y cobrar el valor correspondiente al total.\newline
+Al igual que los recargos que se agregan son diferentes, también son diferentes las formas de recaudar el pago para cada modalidad, en el caso de la contra entrega el usuario es redirigido a confirmar los datos de envió, el método de pago con tarjeta requiere comunicarse con la plataforma de pagos y la consignación redirigir al banco correspondiente.\newline
+El uso de este patrón nos permite que a futuro sea posible agregar nuevas formas de pago sin tener que modificar el código y la implementación ya existente.
 \newpage
 
 \section{Componentes}
@@ -344,7 +462,7 @@ En el anterior Diagrama de estados podemos ver la transición que tienen los pro
 \end{figure}
 
 En este diagrama de clase se muestran los métodos necesarios para realizar las transiciones de un estado.
-\newpage
+
 
 
 

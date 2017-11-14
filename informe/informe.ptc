@@ -132,61 +132,62 @@
 \contentsline {subsection}{\numberline {10.3.1}Diagrama de secuencia}{71}{subsection.10.3.1}
 \contentsline {subsection}{\numberline {10.3.2}Diagrama de comunicaci\IeC {\'o}n}{73}{subsection.10.3.2}
 \contentsline {section}{\numberline {10.4}Clases}{75}{section.10.4}
-\contentsline {section}{\numberline {10.5}Componentes}{76}{section.10.5}
-\contentsline {section}{\numberline {10.6}Nodos}{77}{section.10.6}
-\contentsline {section}{\numberline {10.7}Sistemas}{78}{section.10.7}
-\contentsline {section}{\numberline {10.8}Diagrama de Actividades}{79}{section.10.8}
-\contentsline {section}{\numberline {10.9}Estados}{81}{section.10.9}
-\contentsline {chapter}{\numberline {11}Patrones GoF}{83}{chapter.11}
-\contentsline {section}{\numberline {11.1}Introducci\IeC {\'o}n}{83}{section.11.1}
-\contentsline {section}{\numberline {11.2}Patrones Creacionales}{84}{section.11.2}
-\contentsline {paragraph}{Definici\IeC {\'o}n}{84}{section*.6}
-\contentsline {paragraph}{Tipos de Patrones}{84}{section*.7}
-\contentsline {subsection}{\numberline {11.2.1}Fabrica Abstracta}{84}{subsection.11.2.1}
-\contentsline {subsubsection}{Modelo}{84}{section*.8}
-\contentsline {subsubsection}{Caso de estudio}{85}{section*.9}
-\contentsline {subsection}{\numberline {11.2.2}M\IeC {\'e}todo F\IeC {\'a}brica}{85}{subsection.11.2.2}
-\contentsline {subsubsection}{Modelo}{85}{section*.10}
-\contentsline {subsubsection}{Caso de estudio}{86}{section*.11}
-\contentsline {subsection}{\numberline {11.2.3}Singleton}{86}{subsection.11.2.3}
-\contentsline {subsubsection}{Modelo}{86}{section*.12}
-\contentsline {subsubsection}{Caso de estudio}{87}{section*.13}
-\contentsline {section}{\numberline {11.3}Patrones Estructurales}{89}{section.11.3}
-\contentsline {paragraph}{Definici\IeC {\'o}n}{89}{section*.14}
-\contentsline {paragraph}{Tipos de Patrones}{89}{section*.15}
-\contentsline {subsection}{\numberline {11.3.1}Puente}{89}{subsection.11.3.1}
-\contentsline {subsubsection}{Modelo}{89}{section*.16}
-\contentsline {subsubsection}{Caso de estudio}{90}{section*.17}
-\contentsline {subsection}{\numberline {11.3.2}Fachada}{90}{subsection.11.3.2}
-\contentsline {subsubsection}{Modelo}{90}{section*.18}
-\contentsline {subsubsection}{Caso de estudio}{91}{section*.19}
-\contentsline {section}{\numberline {11.4}Patrones de Comportamiento}{92}{section.11.4}
-\contentsline {paragraph}{Definici\IeC {\'o}n}{92}{section*.20}
-\contentsline {paragraph}{Tipos de Patrones}{92}{section*.21}
-\contentsline {subsection}{\numberline {11.4.1}Comando}{92}{subsection.11.4.1}
-\contentsline {subsubsection}{Modelo}{92}{section*.22}
-\contentsline {subsubsection}{Caso de estudio}{93}{section*.23}
-\contentsline {subsection}{\numberline {11.4.2}Iterador}{93}{subsection.11.4.2}
-\contentsline {subsubsection}{Modelo}{93}{section*.24}
-\contentsline {subsubsection}{Caso de estudio}{94}{section*.25}
-\contentsline {subsection}{\numberline {11.4.3}Mediador}{95}{subsection.11.4.3}
-\contentsline {subsubsection}{Modelo}{95}{section*.26}
-\contentsline {subsubsection}{Caso de estudio}{95}{section*.27}
-\contentsline {subsection}{\numberline {11.4.4}Momento}{96}{subsection.11.4.4}
-\contentsline {subsubsection}{Modelo}{96}{section*.28}
-\contentsline {subsubsection}{Caso de estudio}{97}{section*.29}
-\contentsline {subsection}{\numberline {11.4.5}Observador}{97}{subsection.11.4.5}
-\contentsline {subsubsection}{Modelo}{97}{section*.30}
-\contentsline {subsubsection}{Caso de estudio}{98}{section*.31}
-\contentsline {subsection}{\numberline {11.4.6}Estado}{98}{subsection.11.4.6}
-\contentsline {subsubsection}{Modelo}{98}{section*.32}
-\contentsline {subsubsection}{Caso de estudio}{98}{section*.33}
-\contentsline {subsection}{\numberline {11.4.7}Estrategia}{99}{subsection.11.4.7}
-\contentsline {subsubsection}{Modelo}{99}{section*.34}
-\contentsline {subsubsection}{Caso de estudio}{100}{section*.35}
-\contentsline {part}{\@mypartnumtocformat {III}{Conclusiones y Reflexiones}}{101}{part.3}
+\contentsline {subsubsection}{Diagrama de clases Patr\IeC {\'o}n Memento}{79}{section*.11}
+\contentsline {section}{\numberline {10.5}Componentes}{82}{section.10.5}
+\contentsline {section}{\numberline {10.6}Nodos}{83}{section.10.6}
+\contentsline {section}{\numberline {10.7}Sistemas}{84}{section.10.7}
+\contentsline {section}{\numberline {10.8}Diagrama de Actividades}{85}{section.10.8}
+\contentsline {section}{\numberline {10.9}Estados}{87}{section.10.9}
+\contentsline {chapter}{\numberline {11}Patrones GoF}{89}{chapter.11}
+\contentsline {section}{\numberline {11.1}Introducci\IeC {\'o}n}{89}{section.11.1}
+\contentsline {section}{\numberline {11.2}Patrones Creacionales}{90}{section.11.2}
+\contentsline {paragraph}{Definici\IeC {\'o}n}{90}{section*.17}
+\contentsline {paragraph}{Tipos de Patrones}{90}{section*.18}
+\contentsline {subsection}{\numberline {11.2.1}Fabrica Abstracta}{90}{subsection.11.2.1}
+\contentsline {subsubsection}{Modelo}{90}{section*.19}
+\contentsline {subsubsection}{Caso de estudio}{91}{section*.20}
+\contentsline {subsection}{\numberline {11.2.2}M\IeC {\'e}todo F\IeC {\'a}brica}{91}{subsection.11.2.2}
+\contentsline {subsubsection}{Modelo}{91}{section*.21}
+\contentsline {subsubsection}{Caso de estudio}{92}{section*.22}
+\contentsline {subsection}{\numberline {11.2.3}Singleton}{92}{subsection.11.2.3}
+\contentsline {subsubsection}{Modelo}{92}{section*.23}
+\contentsline {subsubsection}{Caso de estudio}{93}{section*.24}
+\contentsline {section}{\numberline {11.3}Patrones Estructurales}{95}{section.11.3}
+\contentsline {paragraph}{Definici\IeC {\'o}n}{95}{section*.25}
+\contentsline {paragraph}{Tipos de Patrones}{95}{section*.26}
+\contentsline {subsection}{\numberline {11.3.1}Puente}{95}{subsection.11.3.1}
+\contentsline {subsubsection}{Modelo}{95}{section*.27}
+\contentsline {subsubsection}{Caso de estudio}{96}{section*.28}
+\contentsline {subsection}{\numberline {11.3.2}Fachada}{96}{subsection.11.3.2}
+\contentsline {subsubsection}{Modelo}{96}{section*.29}
+\contentsline {subsubsection}{Caso de estudio}{97}{section*.30}
+\contentsline {section}{\numberline {11.4}Patrones de Comportamiento}{98}{section.11.4}
+\contentsline {paragraph}{Definici\IeC {\'o}n}{98}{section*.31}
+\contentsline {paragraph}{Tipos de Patrones}{98}{section*.32}
+\contentsline {subsection}{\numberline {11.4.1}Comando}{98}{subsection.11.4.1}
+\contentsline {subsubsection}{Modelo}{98}{section*.33}
+\contentsline {subsubsection}{Caso de estudio}{98}{section*.34}
+\contentsline {subsection}{\numberline {11.4.2}Iterador}{99}{subsection.11.4.2}
+\contentsline {subsubsection}{Modelo}{99}{section*.35}
+\contentsline {subsubsection}{Caso de estudio}{99}{section*.36}
+\contentsline {subsection}{\numberline {11.4.3}Mediador}{100}{subsection.11.4.3}
+\contentsline {subsubsection}{Modelo}{100}{section*.37}
+\contentsline {subsubsection}{Caso de estudio}{101}{section*.38}
+\contentsline {subsection}{\numberline {11.4.4}Momento}{102}{subsection.11.4.4}
+\contentsline {subsubsection}{Modelo}{102}{section*.39}
+\contentsline {subsubsection}{Caso de estudio}{102}{section*.40}
+\contentsline {subsection}{\numberline {11.4.5}Observador}{103}{subsection.11.4.5}
+\contentsline {subsubsection}{Modelo}{103}{section*.41}
+\contentsline {subsubsection}{Caso de estudio}{103}{section*.42}
+\contentsline {subsection}{\numberline {11.4.6}Estado}{104}{subsection.11.4.6}
+\contentsline {subsubsection}{Modelo}{104}{section*.43}
+\contentsline {subsubsection}{Caso de estudio}{104}{section*.44}
+\contentsline {subsection}{\numberline {11.4.7}Estrategia}{105}{subsection.11.4.7}
+\contentsline {subsubsection}{Modelo}{105}{section*.45}
+\contentsline {subsubsection}{Caso de estudio}{105}{section*.46}
+\contentsline {part}{\@mypartnumtocformat {III}{Conclusiones y Reflexiones}}{107}{part.3}
 \ttl@stoptoc {default@2}
 \ttl@starttoc {default@3}
-\contentsline {chapter}{\numberline {12}Conclusiones}{103}{chapter.12}
-\contentsline {chapter}{\numberline {13}Trabajos Futuros}{105}{chapter.13}
+\contentsline {chapter}{\numberline {12}Conclusiones}{109}{chapter.12}
+\contentsline {chapter}{\numberline {13}Trabajos Futuros}{111}{chapter.13}
 \contentsfinish 

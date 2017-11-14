@@ -49,7 +49,7 @@ El patrón \textbf{Abstract Factory o Fábrica Abstracta} resuleve el problema d
 
 \begin{figure}[th!]
 	\centering
-	\includegraphics[width=1.0\linewidth]{arquitectura/imagenes/modeloFabAbs}
+	\includegraphics[width=1\linewidth]{arquitectura/imagenes/modeloFabAbs}
 	\caption{Metamodelo Patrón Fabrica Abstracta}
 	\label{fig:metamodelo fabrica abstracta}
 \end{figure}
@@ -71,7 +71,7 @@ Segín esto, podemos decir que los componentes típicos del patrón Fábrica Abs
 	\begin{figure}[th!]
 		\centering
 		\includegraphics[width=1\linewidth]{arquitectura/imagenes/DiagramaFabricaAbstracta}
-		\caption{Diagrama de clases Fabrica Abstracta}
+		\caption{Diagrama caso de estudio Patrón Fabrica Abstracta}
 	\end{figure}
 	
 	
@@ -106,7 +106,7 @@ Los elementos de este patrón son:
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/DiagramaMetodoFabrica}
-	\caption{Modelo Patrón Método Fábrica}
+	\caption{Diagrama caso de estudio Patrón Método Fábrica}
 \end{figure}
 
 Para el caso de estudio se puede observar que se implemento el método fabrica para facilitar la creación del tipo de usuarios que maneja el sistema, en este caso cada usuario tiene asociados unas opciones, por ejemplo el usuario no registrado no puede realizar una compra, el usuario registrado si, entre otros, para crear un usuario para cada caso cuando se necesite y saber las opciones que este tiene asociadas se implemento este patrón.
@@ -136,10 +136,10 @@ Sus usos más comunes son clases que representan objetos unívocos. Por ejemplo,
 Este patrón tiene una clase Singleton que define una instancia para los clientes que la acceden. Esta instancia es accedida desde un método llamado getInstancia que devuelve la instancia actual de la clase o crea una nueva en el caso de ser nula.
 
 \subsubsection{Caso de estudio}
-\begin{figure}[h!]
+\begin{figure}[th!]
 	\centering
 	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/PatronSingeltonCasoEstudio}
-	\caption{Caso de estudio patron Singleton}
+	\caption{Diagrama caso de estudio Patrón Singleton}
 \end{figure}
 
 Para nuestro caso de estudio tenemos una clase ConexionDB que es analoga a la clase singleton, esta tiene un metodo llamado getConexion que se encarga de retornar la instancia ya creada de la clase o en el caso de que aun no exista ninguna instancia crear una nueva.\newline
@@ -188,7 +188,7 @@ Este patrón busca eliminar la inconveniencia de esta solución. Las clases mane
 \begin{figure}[th!]
 \centering
 \includegraphics[width=1.0\linewidth]{arquitectura/imagenes/DiagramaComandoYPuente}
-\caption{Diagrama de clases  Comando y Puente}
+\caption{Diagrama caso de estudio Patrones Comando y Puente}
 \end{figure}
 
 
@@ -220,7 +220,7 @@ Las clases utilizadas por este patrón son:
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.8\linewidth]{arquitectura/imagenes/DiagramaFachada}
-	\caption{Diagrama de clases patrón Fachada}
+	\caption{Diagrama caso de estudio Patrón Fachada}
 \end{figure}
 
 Este patrón nos permite ocultar al cliente y al admin lo que sucede detrás del formulario que utilizan, es decir oculta la lógica del programa, la cual no es interesante para ellos, podemos incluir varios subsistemas con este patrón y dejarlos solo visibles para los que esten realmente interesados en cada uno. 
@@ -246,21 +246,21 @@ Los patrones que se encuentran en la lista de Patrones de Comportamiento en el e
 
 \subsection{Comando}
 \subsubsection{Modelo}
-El patrón \textbf{Bridge o Puente} desacopla una abstracción de su implementación, de manera que ambas puedan variar de forma independiente. ¿Que quiere decir exactamente esto? Una abstracción se refiere a un comportamiento que una clase debería implementar, ya sea porque esta obligada por una interface o una clase abstracta. Por otro lado, con implementación se refiere a colocarle lógica a dicha obligación. Cuando un objeto tiene unas implementaciones posibles, la manera habitual de implementación es el uso de herencias. Muchas veces la herencia se puede tornar inmanejable y, por otro lado, acopla el código cliente con una implementación concreta. Este patrón busca eliminar la inconveniencia de esta solución.
+El patrón \textbf{Command o Comando} encapsula un mensaje como un objeto. Especifica una forma simple de separar la ejecución de un comando, del entorno que generó dicho comando. Permite solicitar una operación a un objeto sin conocer el contenido ni el receptor real de la misma. 
 
 \begin{figure}[th!]
 	\centering
-	\includegraphics[width=1.0\linewidth]{arquitectura/imagenes/modeloPuente}
-	\caption{Metamodelo Patrón Puente}
-	\label{fig:metamodelo puente}
+	\includegraphics[width=1\linewidth]{arquitectura/imagenes/modeloComando}
+	\caption{Metamodelo Patrón Comando}
+	\label{fig:metamodelo patron comando}
 \end{figure}
 
-Las clases manejadas por este patrón son:
 \begin{itemize}
-	\item \textbf{Abstracción: }Define una interface abstracta. Mantiene una referencia a un objeto de tipo Implementor.
-	\item \textbf{Abstracción Refinada: }Extiende la interface definida por Abstracción 
-	\item \textbf{Implementador: }Define la interface para la implementación de clases. Esta interface no se tiene que corresponder exactamente con la interface de Abstraccion; de hecho, las dos interfaces pueden ser bastante diferentes entre sí. Típicamente la interface Implementador provee sólo operaciones primitivas, y Abstraccion define operaciones de alto nivel basadas en estas primitivas.
-	\item \textbf{Implementador Concreto: }Implementa la interface de Implementador y define su implementación concreta.
+	\item \textbf{Comando: } Declara una interfaz para ejecutar una operación.
+	\item \textbf{Comando Concreto: }Define un enlace entre un objeto “Receptor” y una acción. 
+	\item \textbf{Cliente: }Crea un objeto “Comando Concreto” y establece su receptor.
+	\item \textbf{Invocador: }Le pide a la orden que ejecute la petición.
+	\item \textbf{Receptor: }Sabe como llevar a cabo las operaciones asociadas a una petición. 
 \end{itemize}
 
 
@@ -271,7 +271,7 @@ Las clases manejadas por este patrón son:
 \begin{figure}[th!]
 	\centering
 	\includegraphics[width=1.0\linewidth]{arquitectura/imagenes/DiagramaComandoYPuente}
-	\caption{Diagrama de clases  Comando y Puente}
+	\caption{Diagrama caso de estudio Patrones Comando y Puente}
 \end{figure}
 
 
@@ -305,7 +305,7 @@ El patrón \textbf{Iterator o Iterador} provee un mecanismo estándar para acced
 \begin{figure}[th!]
 	\centering
 	\includegraphics[width=0.9\linewidth]{arquitectura/imagenes/DiagramaIterador}
-	\caption{Diagrama de clases para el patrón Iterador}
+	\caption{Diagrama caso de estudio Patrón Iterador}
 	\label{fig:patronIterador}
 \end{figure}
 
@@ -339,7 +339,7 @@ Donde para este patrón se define que:
 \begin{figure}[th!]
 	\centering
 	\includegraphics[width=1\linewidth]{arquitectura/imagenes/DiagramaMediator}
-	\caption{Diagrama de clases Mediador}
+	\caption{Diagrama caso de estudio Patrón Mediador}
 \end{figure}
 
 Para este caso en especifico se hace uso de patrón observador en su ejemplo más común no por simplicidad sino porque haciendo uso de este se satisface perfectamente uno de los principales requerimientos del sistema el cual es brindar un mecanismo para que a pesar de ser una tienda virtual los usuarios puedan seguir comunicandose con los asesores. \newline
@@ -377,7 +377,7 @@ Los componentes de este patrón son:
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/PatronMementoCasoEstudio}
-	\caption{Caso de estudio Patrón Memento}
+	\caption{Diagrama caso de estudio Patrón Memento}
 	\label{fig:Caso de estudio Patrón Memento}
 \end{figure}
 
@@ -412,25 +412,25 @@ Las clases definidas para este patrón son:
 	\begin{figure}[h!]
 	\centering
 	\includegraphics[width=1.0\linewidth]{arquitectura/imagenes/DiagramaObservador}
-	\caption{Diagrama de clases patrón Observador}
+	\caption{Diagrama caso de estudio Patrón Observador}
 \end{figure}
 
-
-
-El patrón observador es utilizado en nuestro caso debido a la necesidad que tenemos de estar actualizando constantemente los datos de los productos en los formularios del Admin y el Cliente, ya sea actualizando el estado del producto en el stack, o alguna de sus características cada vez que entramos a modificarlas, este patrón nos permite facilitar esta actualización directamente en nuestra base de datos
-
+El patrón observador es utilizado en nuestro caso debido a la necesidad que tenemos de estar actualizando constantemente los datos de los productos en los formularios del Admin y el Cliente, ya sea actualizando el estado del producto en el stack, o alguna de sus características cada vez que entramos a modificarlas, este patrón nos permite facilitar esta actualización directamente en nuestra base de datos.
 
 %%\newpage
 
 \subsection{Estado}
 \subsubsection{Modelo}
+
+El patrón State o estado permite que un objeto modifique su comportamiento cada vez que cambie su estado interno. La intención del State es desacoplar el estado de la clase en cuestión. Las clases utilizadas son:
+
 \begin{figure}[th!]
 	\centering
 	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/PatronEstado}
 	\caption{metamodelo patrón estado}
 	\label{fig:metamodelo patron estado}
 \end{figure}
-El patrón State o estado permite que un objeto modifique su comportamiento cada vez que cambie su estado interno. La intención del State es desacoplar el estado de la clase en cuestión. Las clases utilizadas son:
+
 \begin{enumerate}
 	\item Contexto:Mantiene una instancia con el estado actual Estado:Mantiene una instancia con el estado actual
 	\item EstadoConcreto:Cada subclase implementa el comportamiento asociado con un estado del contexto.
@@ -438,10 +438,11 @@ El patrón State o estado permite que un objeto modifique su comportamiento cada
 %%\newpage
 
 \subsubsection{Caso de estudio}
+
 \begin{figure}[th!]
 	\centering
 	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/PatronEstadoCasoEstudio}
-	\caption{}
+	\caption{Diagrama caso de estudio Patrón Estado}
 	\label{fig:patronestadocasoestudio}
 \end{figure}
 
@@ -474,7 +475,7 @@ Las clases que usa este patrón son:
 \begin{figure}[th!]
 	\centering
 	\includegraphics[width=1.0\linewidth]{arquitectura/imagenes/DiagramaEstrategia}
-	\caption{Diagrama de clases patrón Estrategia}
+	\caption{Diagrama caso de estudio Patrón Estrategia}
 	\label{fig:patronEstrategia}
 \end{figure}
 
