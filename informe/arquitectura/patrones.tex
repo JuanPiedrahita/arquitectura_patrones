@@ -90,8 +90,32 @@ Segín esto, podemos decir que los componentes típicos del patrón Fábrica Abs
 
 \subsection{Método Fábrica}
 \subsubsection{Modelo}
-\newpage
+El patrón \textbf{Método Fábrica} libera al desarrollador sobre la forma correcta de crear objetos. Define la interfaz de creación de un cierto tipo de objeto, permitiendo que las subclases decidan que clase concreta necesitan instancias. Muchas veces ocurre que una clase no puede anticipar el tipo de objetos que debe crear, ya que la jerarquía de clases que tiene requiere que deba delegar la responsabilidad a una subclase. 
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=1.0\linewidth]{arquitectura/imagenes/modeloMetFab}
+	\caption{Metamodelo Patrón Método Fabrica}
+	\label{fig:metamodelo metodo fabrica}
+\end{figure}
+
+
+Los elementos de este patrón son:
+\begin{itemize}
+	\item \textbf{Creador: }Declara el método de fabricación (creación), que devuelve un objeto de tipo Producto.
+	\item \textbf{Creador Concreto: }Redefine el método de fabricación para devolver un producto.
+	\item \textbf{Producto Concreto: }Es el resultado final. El creador se apoya en sus subclases para definir el método de fabricación que devuelve el objeto apropiado.
+\end{itemize}
+
+
 \subsubsection{Caso de estudio}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{arquitectura/imagenes/DiagramaMetodoFabrica}
+	\caption{Modelo Patrón Método Fábrica}
+\end{figure}
+
+Para el caso de estudio se puede observar que se implemento el método fabrica para facilitar la creación del tipo de usuarios que maneja el sistema, en este caso cada usuario tiene asociados unas opciones, por ejemplo el usuario no registrado no puede realizar una compra, el usuario registrado si, entre otros, para crear un usuario para cada caso cuando se necesite y saber las opciones que este tiene asociadas se implemento este patrón.
 \newpage
 
 \subsection{Singleton}
@@ -117,7 +141,6 @@ Sus usos más comunes son clases que representan objetos unívocos. Por ejemplo,
 
 Este patrón tiene una clase Singleton que define una instancia para los clientes que la acceden. Esta instancia es accedida desde un método llamado getInstancia que devuelve la instancia actual de la clase o crea una nueva en el caso de ser nula.
 
-\newpage
 \subsubsection{Caso de estudio}
 \begin{figure}[h!]
 	\centering
@@ -369,7 +392,6 @@ Los componentes de este patrón son:
 	\item Memento: almacena el estado interno de un objeto Originator. El Memento puede almacenar todo o parte del estado
 	\item Originator: crea un objeto Memento conteniendo una fotografía de su estado interno
 \end{enumerate}
-\newpage
 
 \subsubsection{Caso de estudio}
 \begin{figure}[h!]
@@ -433,7 +455,7 @@ El patrón State o estado permite que un objeto modifique su comportamiento cada
 	\item Contexto:Mantiene una instancia con el estado actual Estado:Mantiene una instancia con el estado actual
 	\item EstadoConcreto:Cada subclase implementa el comportamiento asociado con un estado del contexto.
 \end{enumerate}  
-\newpage
+%%\newpage
 
 \subsubsection{Caso de estudio}
 \begin{figure}[th!]
@@ -457,20 +479,6 @@ En el anterior Diagrama de estados podemos ver la transición que tienen los pro
 \subsection{Método Plantilla}
 \subsubsection{Modelo}
 
-El patrón \textbf{Template Method o Método Plantilla} define una estructura algorítmica cuya lógica quedará a cargo de las subclases. Para ello, escribe una clase abstracta que contiene parte de la lógica necesaria para realizar su finalidad. En ella se define una estructura de herencia que sirve de plantilla ("Template" significa plantilla) de los métodos en las subclases.
-
-\begin{figure}[th!]
-	\centering
-	\includegraphics[width=0.6\linewidth]{arquitectura/imagenes/ModeloPlantilla}
-	\caption{Metamodelo Patrón Método Plantilla}
-	\label{fig:metamodelo patron metodo plantilla}
-\end{figure}
-
-Las clases definidas en el modelo del patrón plantilla son:
-\begin{itemize}
-	\item \textbf{Plantilla Abstracta: }Implementa un método plantilla que define el esqueleto de un algoritmo y define métodos abstractos que deben implementar las subclases concretas
-	\item \textbf{Plantilla Concreta: }Implementa los métodos abstractos para realizar los pasos del algoritmo que son específicos de la subclase.
-\end{itemize}
 
 \subsubsection{Caso de estudio}
 
