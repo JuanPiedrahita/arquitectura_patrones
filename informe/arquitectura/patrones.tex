@@ -79,14 +79,8 @@ Segín esto, podemos decir que los componentes típicos del patrón Fábrica Abs
 	En el diagrama podemos ver que, para nuestro caso tendremos diferentes líneas de productos que podrán ser registrados en la base de datos. Para esto usamos el patrón fabrica abstracta que nos permite crear familias de productos de acuerdo a la línea establecida, además este patrón permite el escalamiento del aplicativo en forma horizontal, con lo cual, podremos a futuro adicionar otras nuevas líneas o colecciones de productos, sin necesidad de modificar las líneas ya creadas.
 	
 	
-\newpage
+%%\newpage
 
-
-\subsection{constructor}
-\subsubsection{Modelo}
-\newpage
-\subsubsection{Caso de estudio}
-\newpage
 
 \subsection{Método Fábrica}
 \subsubsection{Modelo}
@@ -116,7 +110,7 @@ Los elementos de este patrón son:
 \end{figure}
 
 Para el caso de estudio se puede observar que se implemento el método fabrica para facilitar la creación del tipo de usuarios que maneja el sistema, en este caso cada usuario tiene asociados unas opciones, por ejemplo el usuario no registrado no puede realizar una compra, el usuario registrado si, entre otros, para crear un usuario para cada caso cuando se necesite y saber las opciones que este tiene asociadas se implemento este patrón.
-\newpage
+%%\newpage
 
 \subsection{Singleton}
 \subsubsection{Modelo}
@@ -168,13 +162,6 @@ Los patrones que se encuentran en la lista de Patrones Estructurales en el enfoq
 	\item Proxy (Proxy)
 \end{enumerate}
 
-\subsection{Adaptador}
-\subsubsection{Modelo}
-\newpage
-\subsubsection{Caso de estudio}
-\newpage
-
-
 \subsection{Puente}
 	
 \subsubsection{Modelo}
@@ -185,7 +172,7 @@ El patrón \textbf{Bridge o Puente} desacopla una abstracción de su implementac
 	\centering
 	\includegraphics[width=1\linewidth]{arquitectura/imagenes/modeloPuente}
 	\caption{Metamodelo Patrón Puente}
-	\label{fig:metamodelo puente}
+	\label{fig:puente}
 \end{figure}
 
 Este patrón busca eliminar la inconveniencia de esta solución. Las clases manejadas por este patrón son:
@@ -208,32 +195,6 @@ Este patrón busca eliminar la inconveniencia de esta solución. Las clases mane
 
 El patrón comando utilizado en este caso permite separar y simplificar el uso de los botones y la función de cada uno en distintas opciones presentadas al usuario, para este caso particular están definidos los casos en los que el Admin crea, modifica, elimina o agrega un nuevo producto a la base de datos.
 El patrón bridge, es un puente entre la abstracción de una base de datos y sus funciones con la lógica de estas funciones de acuerdo con el tipo de base de datos, puesto que la manera en que se borra, crea, agrega o modifica es diferente en cada base de datos (MySQL, Postgres, etc), de manera que en la base concreta se define el método en que cada función de la abstracción, realiza su operación. Esto permite que más adelante podamos agregar otras bases de datos a nuestro aplicativo sin la necesidad de modificar el código ya creado, y haciendo escalamiento de nuestro programa de manera horizontal.
-
-\newpage
-
-\subsection{componente}
-\subsubsection{Modelo}
-\newpage
-\subsubsection{Caso de estudio}
-\newpage
-
-\subsection{Decorador}
-\subsubsection{Modelo}
-\newpage
-\subsubsection{Caso de estudio}
-\newpage
-
-\subsection{Peso Ligero}
-\subsubsection{Modelo}
-\newpage
-\subsubsection{Caso de estudio}
-\newpage
-
-\subsection{Proxy}
-\subsubsection{Modelo}
-\newpage
-\subsubsection{Caso de estudio}
-\newpage
 
 \subsection{Fachada}
 \subsubsection{Modelo}
@@ -285,15 +246,40 @@ Los patrones que se encuentran en la lista de Patrones de Comportamiento en el e
 
 \subsection{Comando}
 \subsubsection{Modelo}
-\newpage
-\subsubsection{Caso de estudio}
-\newpage
+El patrón \textbf{Bridge o Puente} desacopla una abstracción de su implementación, de manera que ambas puedan variar de forma independiente. ¿Que quiere decir exactamente esto? Una abstracción se refiere a un comportamiento que una clase debería implementar, ya sea porque esta obligada por una interface o una clase abstracta. Por otro lado, con implementación se refiere a colocarle lógica a dicha obligación. Cuando un objeto tiene unas implementaciones posibles, la manera habitual de implementación es el uso de herencias. Muchas veces la herencia se puede tornar inmanejable y, por otro lado, acopla el código cliente con una implementación concreta. Este patrón busca eliminar la inconveniencia de esta solución.
 
-\subsection{Cadena de Responsabilidades}
-\subsubsection{Modelo}
-\newpage
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=1.0\linewidth]{arquitectura/imagenes/modeloPuente}
+	\caption{Metamodelo Patrón Puente}
+	\label{fig:metamodelo puente}
+\end{figure}
+
+Las clases manejadas por este patrón son:
+\begin{itemize}
+	\item \textbf{Abstracción: }Define una interface abstracta. Mantiene una referencia a un objeto de tipo Implementor.
+	\item \textbf{Abstracción Refinada: }Extiende la interface definida por Abstracción 
+	\item \textbf{Implementador: }Define la interface para la implementación de clases. Esta interface no se tiene que corresponder exactamente con la interface de Abstraccion; de hecho, las dos interfaces pueden ser bastante diferentes entre sí. Típicamente la interface Implementador provee sólo operaciones primitivas, y Abstraccion define operaciones de alto nivel basadas en estas primitivas.
+	\item \textbf{Implementador Concreto: }Implementa la interface de Implementador y define su implementación concreta.
+\end{itemize}
+
+
+
 \subsubsection{Caso de estudio}
-\newpage
+
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=1.0\linewidth]{arquitectura/imagenes/DiagramaComandoYPuente}
+	\caption{Diagrama de clases  Comando y Puente}
+\end{figure}
+
+
+
+El patrón comando utilizado en este caso permite separar y simplificar el uso de los botones y la función de cada uno en distintas opciones presentadas al usuario, para este caso particular están definidos los casos en los que el Admin crea, modifica, elimina o agrega un nuevo producto a la base de datos.
+El patrón bridge, es un puente entre la abstracción de una base de datos y sus funciones con la lógica de estas funciones de acuerdo con el tipo de base de datos, puesto que la manera en que se borra, crea, agrega o modifica es diferente en cada base de datos (MySQL, Postgres, etc), de manera que en la base concreta se define el método en que cada función de la abstracción, realiza su operación. Esto permite que más adelante podamos agregar otras bases de datos a nuestro aplicativo sin la necesidad de modificar el código ya creado, y haciendo escalamiento de nuestro programa de manera horizontal.
+
+%%\newpage
 
 \subsection{Iterador}
 \subsubsection{Modelo}
@@ -325,13 +311,7 @@ El patrón \textbf{Iterator o Iterador} provee un mecanismo estándar para acced
 
 En este caso se puede observar en la figura \ref{fig:patronIterador} que se hace uso del patrón iterador para iterar por cada uno de los elementos del carrito de compras. En este caso nuestro cliente es cada uno de los productos que pertenecen al carrito, el carrito abstracto tiene una lista de productos que son los escogidos por el cliente, cuando el cliente manipula el carrito de compras se le permite agregar o eliminar productos de este, una vez este ha decidido que desea comprar todos los elementos que tiene en el carrito es necesario para generar la factura y seguir con el proceso de pago saber el total del valor de los productos que el cliente escogió, para esto se hace uso del IteradorCarrito  el cual recorre el arreglo de productos del carrito preguntando si hay más elementos y obteniendo el valor del producto actual multiplicando el valor de la unidad por la cantidad escogida por el cliente; una vez el iterador define que no hay más elementos siguientes se puede mostrar el valor del total al cliente y continuar con el proceso de pago.
 
-\newpage
 
-\subsection{Inrterprete}
-\subsubsection{Modelo}
-\newpage
-\subsubsection{Caso de estudio}
-\newpage
 
 \subsection{Mediador}
 
@@ -365,7 +345,7 @@ Donde para este patrón se define que:
 Para este caso en especifico se hace uso de patrón observador en su ejemplo más común no por simplicidad sino porque haciendo uso de este se satisface perfectamente uno de los principales requerimientos del sistema el cual es brindar un mecanismo para que a pesar de ser una tienda virtual los usuarios puedan seguir comunicandose con los asesores. \newline
 En este caso se plantea una interfaz abstracta para cada usuario que tiene dos métodos, enviar y recibir mensaje, esta se implementa en cada usuario que a su vez tiene un nombre que lo identifica en el foro y le permitirá distinguirse de los demás y ademas conoce el foro. La interfaz abstracta AForo tiene dos métodos que permiten a los usuarios suscribirse al foro y el método enviar que es donde se realizara todo el proceso de registro y envio del mensaje, esta interfaz la implementa la Clase Foro que además tiene un arreglo de usuarios que son los usuarios que pertenecen al chat.
 
-\newpage
+
 
 \subsection{Momento}
 \subsubsection{Modelo}
@@ -403,7 +383,7 @@ Los componentes de este patrón son:
 
 Para nuestro caso de estudio el patrón memento tiene las siguientes clases, una clase AccionesCompra, que se encarga de manejar las acciones relacionadas al carrito de compra, como agregar productos, eliminarlos, confirmar compra entre otras, cada vez que se visualizan los productos agregados al carrito, se genera un detalle de la venta, que tiene los productos y la cantidad que se va a comprar, es decir el estado del carrito, la clase memento tiene un estado que es el estado interno de la clase AccionesCompra en momento dado, y la clase CareTaker es la encarga de almacenar cada uno de los estados internos de la clase AccionesCompra y retornarlos cuando sea necesario.\newline
 El objetivo del uso de este patron en estas clases, es que una vez se esten visulizando los productos agregados al carrito de compras, y se eliminen por error se pueda deshacer esta accion y retornar al estado anterior del carrito, asi mismo tambien se podra rehacer la accion devolviendo el carrito a su ultimo estado.
-\newpage
+%%\newpage
 
 \subsection{Observador}
 \subsubsection{Modelo}
@@ -438,9 +418,9 @@ Las clases definidas para este patrón son:
 
 
 El patrón observador es utilizado en nuestro caso debido a la necesidad que tenemos de estar actualizando constantemente los datos de los productos en los formularios del Admin y el Cliente, ya sea actualizando el estado del producto en el stack, o alguna de sus características cada vez que entramos a modificarlas, este patrón nos permite facilitar esta actualización directamente en nuestra base de datos
-\newpage
 
-\newpage
+
+%%\newpage
 
 \subsection{Estado}
 \subsubsection{Modelo}
@@ -467,20 +447,44 @@ El patrón State o estado permite que un objeto modifique su comportamiento cada
 
 
 En el anterior Diagrama de estados podemos ver la transición que tienen los productos desde el momento en que se cargan a la página, hasta que se realiza exitosamente una  compra, para esto nos basamos en 4 estados posibles, en inventario, en carrito, vendido, agotado, el producto empieza en un estado base de en inventario con una cantidad disponible, cuando se agrega el producto a carrito se cambia de estado a en carrito, en donde tiene dos posibles disparadores, que son desagregar de carrito y confirmar compra, si se desagrega del carrito, regresara a su estado base en inventario, si se confirma la compra cambiara de estado ha vendido, en donde se actualizara el inventario, si la cantidad comprada es igual a la disponibles en inventario, el producto quedara en un estado de agotado, si aún hay unidades disponibles volverá a un estado de inventario, a partir de ahí podemos crear una clase producto la cual podrá contener cualquiera de los 4 estados
-\newpage
+
 
 \subsection{Estrategia}
 \subsubsection{Modelo}
-\newpage
+
+El patrón \textbf{Strategy o Estrategia} encapsula algoritmos en clases, permitiendo que éstos sean re-utilizados e intercambiables. En base a un parámetro, que puede ser cualquier objeto, permite a una aplicación decidir en tiempo de ejecución el algoritmo que debe ejecutar.
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=1\linewidth]{arquitectura/imagenes/modeloEstrategia}
+	\caption{Metamodelo del Patrón Estrategia}
+	\label{fig:metamodelo patron estrategia}
+\end{figure}
+
+Las clases que usa este patrón son:
+\begin{itemize}
+	\item \textbf{Estrategia: }Declara una interfaz común a todos los algoritmos soportados.
+	\item \textbf{Estrategia Concreta: }Implementa un algoritmo utilizando la interfaz Estrategia. Es la representación de un algoritmo.
+	\item \textbf{Contexto: }Mantiene una referencia a Estrategia y según las características del contexto, optará por una estrategia determinada.
+	\item \textbf{Cliente: }Solicita un servicio a Estrategia y este debe devolver el resultado de la Estrategia Concreta.
+\end{itemize}
+
 \subsubsection{Caso de estudio}
-\newpage
+
+\begin{figure}[th!]
+	\centering
+	\includegraphics[width=1.0\linewidth]{arquitectura/imagenes/DiagramaEstrategia}
+	\caption{Diagrama de clases patrón Estrategia}
+	\label{fig:patronEstrategia}
+\end{figure}
 
 
-\subsection{Método Plantilla}
-\subsubsection{Modelo}
+Como se puede observar en la figura \ref{fig:patronEstrategia} en este caso se aplica la estrategia para solicitar al cliente el recaudo del pago, debido a que se tienen diferentes de formas o posibilidades de pago y cada pago se hace de forma diferente, en este caso la factura solicita recaudar el  pago y conforme al método escogido por el cliente se ejecutará la estrategia correspondiente.\newline
+Debido a que cada medio de pago requiere agregar recargos diferentes, como es el caso de la forma de pago de consignación y de tarjeta que requieren agregar los impuestos correspondientes, o el caso del pago a contra entrega en donde es necesario agregar el recargo del mensajero que se encargará de entregar el producto al cliente y cobrar el valor correspondiente al total.\newline
+Al igual que los recargos que se agregan son diferentes, también son diferentes las formas de recaudar el pago para cada modalidad, en el caso de la contra entrega el usuario es redirigido a confirmar los datos de envió, el método de pago con tarjeta requiere comunicarse con la plataforma de pagos y la consignación redirigir al banco correspondiente.\newline
+El uso de este patrón nos permite que a futuro sea posible agregar nuevas formas de pago sin tener que modificar el código y la implementación ya existente.
 
 
-\subsubsection{Caso de estudio}
 
 
-\newpage
+
